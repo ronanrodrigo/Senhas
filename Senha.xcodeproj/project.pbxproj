@@ -7,15 +7,81 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		348A577A25A5E52300FC42B1 /* Senha_UnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348A577925A5E52200FC42B1 /* Senha_UnitTests.swift */; };
+		348A57A225A5E54200FC42B1 /* GeneratePasswordPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348A578525A5E54200FC42B1 /* GeneratePasswordPresenterTests.swift */; };
+		348A57AD25A5E54200FC42B1 /* CharacterGatewayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348A579225A5E54200FC42B1 /* CharacterGatewayTests.swift */; };
+		348A57AE25A5E54200FC42B1 /* GeneratePasswordInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348A579425A5E54200FC42B1 /* GeneratePasswordInteractorTests.swift */; };
+		348A57AF25A5E54200FC42B1 /* GeneratePasswordControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348A579625A5E54200FC42B1 /* GeneratePasswordControllerTests.swift */; };
+		348A57B625A5E54200FC42B1 /* PasswordRuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348A579F25A5E54200FC42B1 /* PasswordRuleTests.swift */; };
+		348A57B825A5E54200FC42B1 /* PasswordViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348A57A125A5E54200FC42B1 /* PasswordViewModelTests.swift */; };
+		34A345D325A3B7E100251D6F /* GeneratePasswordInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A345D225A3B7E100251D6F /* GeneratePasswordInteractor.swift */; };
+		34A345D725A3B82300251D6F /* PasswordRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A345D625A3B82300251D6F /* PasswordRule.swift */; };
+		34A345DA25A3BAAF00251D6F /* GeneratePasswordPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A345D925A3BAAF00251D6F /* GeneratePasswordPresenter.swift */; };
+		34A345DD25A3BADB00251D6F /* GeneratePasswordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A345DC25A3BADB00251D6F /* GeneratePasswordController.swift */; };
+		34A345E125A3BCF400251D6F /* Password.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A345E025A3BCF400251D6F /* Password.swift */; };
+		34A345E425A3BD6D00251D6F /* PasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A345E325A3BD6D00251D6F /* PasswordViewModel.swift */; };
+		34A345E925A41E1D00251D6F /* GeneratePasswordControllableFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A345E825A41E1D00251D6F /* GeneratePasswordControllableFactory.swift */; };
+		34A345EC25A41E5300251D6F /* GeneratePasswordInteractableFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A345EB25A41E5300251D6F /* GeneratePasswordInteractableFactory.swift */; };
+		34A345EF25A41E8D00251D6F /* GeneratePasswordPresentableFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A345EE25A41E8D00251D6F /* GeneratePasswordPresentableFactory.swift */; };
+		34A345F225A41F1800251D6F /* GeneratorViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A345F125A41F1800251D6F /* GeneratorViewFactory.swift */; };
+		34A345F525A42ABF00251D6F /* CharInclusionViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A345F425A42ABF00251D6F /* CharInclusionViewFactory.swift */; };
+		34A345F825A42C0B00251D6F /* PasswordSizeViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A345F725A42C0B00251D6F /* PasswordSizeViewFactory.swift */; };
+		34A345FB25A42C5600251D6F /* SeparatorsViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A345FA25A42C5600251D6F /* SeparatorsViewFactory.swift */; };
+		34A345FE25A42CB200251D6F /* SaveViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A345FD25A42CB200251D6F /* SaveViewFactory.swift */; };
+		34A3460125A42CE600251D6F /* PasswordGeneratedViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A3460025A42CE600251D6F /* PasswordGeneratedViewFactory.swift */; };
+		34A3460525A48B9700251D6F /* CharacterGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A3460425A48B9700251D6F /* CharacterGateway.swift */; };
+		34A3460925A48FE800251D6F /* CharacterGatewayableFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A3460825A48FE800251D6F /* CharacterGatewayableFactory.swift */; };
 		34E48035249D1D2A00FE8222 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E48034249D1D2A00FE8222 /* AppDelegate.swift */; };
 		34E48037249D1D2A00FE8222 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E48036249D1D2A00FE8222 /* SceneDelegate.swift */; };
 		34E48039249D1D2A00FE8222 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E48038249D1D2A00FE8222 /* ContentView.swift */; };
 		34E4803B249D1D2D00FE8222 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34E4803A249D1D2D00FE8222 /* Assets.xcassets */; };
 		34E4803E249D1D2D00FE8222 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34E4803D249D1D2D00FE8222 /* Preview Assets.xcassets */; };
 		34E48041249D1D2D00FE8222 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34E4803F249D1D2D00FE8222 /* LaunchScreen.storyboard */; };
+		34E48052249D8DA400FE8222 /* PasswordGeneratedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E48051249D8DA400FE8222 /* PasswordGeneratedView.swift */; };
+		34E48057249D8E9B00FE8222 /* GeneratorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E48055249D8E9B00FE8222 /* GeneratorView.swift */; };
+		34E48058249D8E9B00FE8222 /* PasswordSizeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E48056249D8E9B00FE8222 /* PasswordSizeView.swift */; };
+		34E4805A249D9C2D00FE8222 /* SeparatorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E48059249D9C2D00FE8222 /* SeparatorsView.swift */; };
+		34E4805C249D9C8300FE8222 /* SaveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E4805B249D9C8300FE8222 /* SaveView.swift */; };
+		34E4805E249D9CC700FE8222 /* CharInclusionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E4805D249D9CC700FE8222 /* CharInclusionView.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		348A577C25A5E52300FC42B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 34E48029249D1D2A00FE8222 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 34E48030249D1D2A00FE8222;
+			remoteInfo = Senha;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		348A577725A5E52200FC42B1 /* Senha-UnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Senha-UnitTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		348A577925A5E52200FC42B1 /* Senha_UnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Senha_UnitTests.swift; sourceTree = "<group>"; };
+		348A577B25A5E52300FC42B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		348A578525A5E54200FC42B1 /* GeneratePasswordPresenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratePasswordPresenterTests.swift; sourceTree = "<group>"; };
+		348A579225A5E54200FC42B1 /* CharacterGatewayTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterGatewayTests.swift; sourceTree = "<group>"; };
+		348A579425A5E54200FC42B1 /* GeneratePasswordInteractorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratePasswordInteractorTests.swift; sourceTree = "<group>"; };
+		348A579625A5E54200FC42B1 /* GeneratePasswordControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratePasswordControllerTests.swift; sourceTree = "<group>"; };
+		348A579F25A5E54200FC42B1 /* PasswordRuleTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordRuleTests.swift; sourceTree = "<group>"; };
+		348A57A125A5E54200FC42B1 /* PasswordViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordViewModelTests.swift; sourceTree = "<group>"; };
+		34A345D225A3B7E100251D6F /* GeneratePasswordInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratePasswordInteractor.swift; sourceTree = "<group>"; };
+		34A345D625A3B82300251D6F /* PasswordRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordRule.swift; sourceTree = "<group>"; };
+		34A345D925A3BAAF00251D6F /* GeneratePasswordPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratePasswordPresenter.swift; sourceTree = "<group>"; };
+		34A345DC25A3BADB00251D6F /* GeneratePasswordController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratePasswordController.swift; sourceTree = "<group>"; };
+		34A345E025A3BCF400251D6F /* Password.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Password.swift; sourceTree = "<group>"; };
+		34A345E325A3BD6D00251D6F /* PasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordViewModel.swift; sourceTree = "<group>"; };
+		34A345E825A41E1D00251D6F /* GeneratePasswordControllableFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratePasswordControllableFactory.swift; sourceTree = "<group>"; };
+		34A345EB25A41E5300251D6F /* GeneratePasswordInteractableFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratePasswordInteractableFactory.swift; sourceTree = "<group>"; };
+		34A345EE25A41E8D00251D6F /* GeneratePasswordPresentableFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratePasswordPresentableFactory.swift; sourceTree = "<group>"; };
+		34A345F125A41F1800251D6F /* GeneratorViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratorViewFactory.swift; sourceTree = "<group>"; };
+		34A345F425A42ABF00251D6F /* CharInclusionViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharInclusionViewFactory.swift; sourceTree = "<group>"; };
+		34A345F725A42C0B00251D6F /* PasswordSizeViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordSizeViewFactory.swift; sourceTree = "<group>"; };
+		34A345FA25A42C5600251D6F /* SeparatorsViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeparatorsViewFactory.swift; sourceTree = "<group>"; };
+		34A345FD25A42CB200251D6F /* SaveViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveViewFactory.swift; sourceTree = "<group>"; };
+		34A3460025A42CE600251D6F /* PasswordGeneratedViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordGeneratedViewFactory.swift; sourceTree = "<group>"; };
+		34A3460425A48B9700251D6F /* CharacterGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterGateway.swift; sourceTree = "<group>"; };
+		34A3460825A48FE800251D6F /* CharacterGatewayableFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterGatewayableFactory.swift; sourceTree = "<group>"; };
 		34E48031249D1D2A00FE8222 /* Senha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Senha.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34E48034249D1D2A00FE8222 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		34E48036249D1D2A00FE8222 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -25,9 +91,22 @@
 		34E48040249D1D2D00FE8222 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		34E48042249D1D2D00FE8222 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		34E4804A249D1F3900FE8222 /* Senha.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Senha.entitlements; sourceTree = "<group>"; };
+		34E48051249D8DA400FE8222 /* PasswordGeneratedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordGeneratedView.swift; sourceTree = "<group>"; };
+		34E48055249D8E9B00FE8222 /* GeneratorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratorView.swift; sourceTree = "<group>"; };
+		34E48056249D8E9B00FE8222 /* PasswordSizeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordSizeView.swift; sourceTree = "<group>"; };
+		34E48059249D9C2D00FE8222 /* SeparatorsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeparatorsView.swift; sourceTree = "<group>"; };
+		34E4805B249D9C8300FE8222 /* SaveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveView.swift; sourceTree = "<group>"; };
+		34E4805D249D9CC700FE8222 /* CharInclusionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharInclusionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		348A577425A5E52200FC42B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		34E4802E249D1D2A00FE8222 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -38,10 +117,141 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		348A577825A5E52200FC42B1 /* Senha-UnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				348A57D925A5E64D00FC42B1 /* Base */,
+				348A578325A5E54200FC42B1 /* Generator */,
+			);
+			path = "Senha-UnitTests";
+			sourceTree = "<group>";
+		};
+		348A578325A5E54200FC42B1 /* Generator */ = {
+			isa = PBXGroup;
+			children = (
+				348A579525A5E54200FC42B1 /* Controllers */,
+				348A579E25A5E54200FC42B1 /* Entities */,
+				348A579125A5E54200FC42B1 /* Gateways */,
+				348A579325A5E54200FC42B1 /* Interactors */,
+				348A578425A5E54200FC42B1 /* Presenters */,
+			);
+			path = Generator;
+			sourceTree = "<group>";
+		};
+		348A578425A5E54200FC42B1 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				348A578525A5E54200FC42B1 /* GeneratePasswordPresenterTests.swift */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		348A579125A5E54200FC42B1 /* Gateways */ = {
+			isa = PBXGroup;
+			children = (
+				348A579225A5E54200FC42B1 /* CharacterGatewayTests.swift */,
+			);
+			path = Gateways;
+			sourceTree = "<group>";
+		};
+		348A579325A5E54200FC42B1 /* Interactors */ = {
+			isa = PBXGroup;
+			children = (
+				348A579425A5E54200FC42B1 /* GeneratePasswordInteractorTests.swift */,
+			);
+			path = Interactors;
+			sourceTree = "<group>";
+		};
+		348A579525A5E54200FC42B1 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				348A579625A5E54200FC42B1 /* GeneratePasswordControllerTests.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		348A579E25A5E54200FC42B1 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				348A579F25A5E54200FC42B1 /* PasswordRuleTests.swift */,
+				348A57A125A5E54200FC42B1 /* PasswordViewModelTests.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		348A57D925A5E64D00FC42B1 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				348A577B25A5E52300FC42B1 /* Info.plist */,
+				348A577925A5E52200FC42B1 /* Senha_UnitTests.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		34A345CB25A3B78B00251D6F /* Interactors */ = {
+			isa = PBXGroup;
+			children = (
+				34A345D225A3B7E100251D6F /* GeneratePasswordInteractor.swift */,
+			);
+			path = Interactors;
+			sourceTree = "<group>";
+		};
+		34A345CC25A3B79100251D6F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				34A345DC25A3BADB00251D6F /* GeneratePasswordController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		34A345CD25A3B79800251D6F /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				34A345D925A3BAAF00251D6F /* GeneratePasswordPresenter.swift */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		34A345CE25A3B79D00251D6F /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				34A345D625A3B82300251D6F /* PasswordRule.swift */,
+				34A345E025A3BCF400251D6F /* Password.swift */,
+				34A345E325A3BD6D00251D6F /* PasswordViewModel.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		34A345D125A3B7C000251D6F /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				34A345E825A41E1D00251D6F /* GeneratePasswordControllableFactory.swift */,
+				34A345EB25A41E5300251D6F /* GeneratePasswordInteractableFactory.swift */,
+				34A345EE25A41E8D00251D6F /* GeneratePasswordPresentableFactory.swift */,
+				34A345F125A41F1800251D6F /* GeneratorViewFactory.swift */,
+				34A345F425A42ABF00251D6F /* CharInclusionViewFactory.swift */,
+				34A345F725A42C0B00251D6F /* PasswordSizeViewFactory.swift */,
+				34A345FA25A42C5600251D6F /* SeparatorsViewFactory.swift */,
+				34A345FD25A42CB200251D6F /* SaveViewFactory.swift */,
+				34A3460025A42CE600251D6F /* PasswordGeneratedViewFactory.swift */,
+				34A3460825A48FE800251D6F /* CharacterGatewayableFactory.swift */,
+			);
+			path = Factories;
+			sourceTree = "<group>";
+		};
+		34A3460325A48B8500251D6F /* Gateways */ = {
+			isa = PBXGroup;
+			children = (
+				34A3460425A48B9700251D6F /* CharacterGateway.swift */,
+			);
+			path = Gateways;
+			sourceTree = "<group>";
+		};
 		34E48028249D1D2A00FE8222 = {
 			isa = PBXGroup;
 			children = (
 				34E48033249D1D2A00FE8222 /* Senha */,
+				348A577825A5E52200FC42B1 /* Senha-UnitTests */,
 				34E48032249D1D2A00FE8222 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +260,7 @@
 			isa = PBXGroup;
 			children = (
 				34E48031249D1D2A00FE8222 /* Senha.app */,
+				348A577725A5E52200FC42B1 /* Senha-UnitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -57,8 +268,8 @@
 		34E48033249D1D2A00FE8222 /* Senha */ = {
 			isa = PBXGroup;
 			children = (
-				34E48049249D1E2900FE8222 /* Main */,
-				34E48038249D1D2A00FE8222 /* ContentView.swift */,
+				34E48049249D1E2900FE8222 /* Base */,
+				34E4804B249D8CF900FE8222 /* Generator */,
 			);
 			path = Senha;
 			sourceTree = "<group>";
@@ -71,23 +282,69 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		34E48049249D1E2900FE8222 /* Main */ = {
+		34E48049249D1E2900FE8222 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				34E4804A249D1F3900FE8222 /* Senha.entitlements */,
-				34E4803C249D1D2D00FE8222 /* Preview Content */,
-				34E4803A249D1D2D00FE8222 /* Assets.xcassets */,
-				34E4803F249D1D2D00FE8222 /* LaunchScreen.storyboard */,
-				34E48042249D1D2D00FE8222 /* Info.plist */,
 				34E48034249D1D2A00FE8222 /* AppDelegate.swift */,
+				34E4803A249D1D2D00FE8222 /* Assets.xcassets */,
+				34E48038249D1D2A00FE8222 /* ContentView.swift */,
+				34E48042249D1D2D00FE8222 /* Info.plist */,
+				34E4803F249D1D2D00FE8222 /* LaunchScreen.storyboard */,
+				34E4803C249D1D2D00FE8222 /* Preview Content */,
 				34E48036249D1D2A00FE8222 /* SceneDelegate.swift */,
+				34E4804A249D1F3900FE8222 /* Senha.entitlements */,
 			);
-			path = Main;
+			path = Base;
+			sourceTree = "<group>";
+		};
+		34E4804B249D8CF900FE8222 /* Generator */ = {
+			isa = PBXGroup;
+			children = (
+				34A345CC25A3B79100251D6F /* Controllers */,
+				34A345CE25A3B79D00251D6F /* Entities */,
+				34A345D125A3B7C000251D6F /* Factories */,
+				34A3460325A48B8500251D6F /* Gateways */,
+				34A345CB25A3B78B00251D6F /* Interactors */,
+				34A345CD25A3B79800251D6F /* Presenters */,
+				34E4804E249D8D4200FE8222 /* Views */,
+			);
+			path = Generator;
+			sourceTree = "<group>";
+		};
+		34E4804E249D8D4200FE8222 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				34E48055249D8E9B00FE8222 /* GeneratorView.swift */,
+				34E4805D249D9CC700FE8222 /* CharInclusionView.swift */,
+				34E48051249D8DA400FE8222 /* PasswordGeneratedView.swift */,
+				34E48056249D8E9B00FE8222 /* PasswordSizeView.swift */,
+				34E4805B249D9C8300FE8222 /* SaveView.swift */,
+				34E48059249D9C2D00FE8222 /* SeparatorsView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		348A577625A5E52200FC42B1 /* Senha-UnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 348A577E25A5E52300FC42B1 /* Build configuration list for PBXNativeTarget "Senha-UnitTests" */;
+			buildPhases = (
+				348A577325A5E52200FC42B1 /* Sources */,
+				348A577425A5E52200FC42B1 /* Frameworks */,
+				348A577525A5E52200FC42B1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				348A577D25A5E52300FC42B1 /* PBXTargetDependency */,
+			);
+			name = "Senha-UnitTests";
+			productName = "Senha-UnitTests";
+			productReference = 348A577725A5E52200FC42B1 /* Senha-UnitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		34E48030249D1D2A00FE8222 /* Senha */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 34E48045249D1D2D00FE8222 /* Build configuration list for PBXNativeTarget "Senha" */;
@@ -111,10 +368,14 @@
 		34E48029249D1D2A00FE8222 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1150;
-				LastUpgradeCheck = 1150;
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
 				ORGANIZATIONNAME = "Ronan Nunes";
 				TargetAttributes = {
+					348A577625A5E52200FC42B1 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 34E48030249D1D2A00FE8222;
+					};
 					34E48030249D1D2A00FE8222 = {
 						CreatedOnToolsVersion = 11.5;
 					};
@@ -134,11 +395,19 @@
 			projectRoot = "";
 			targets = (
 				34E48030249D1D2A00FE8222 /* Senha */,
+				348A577625A5E52200FC42B1 /* Senha-UnitTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		348A577525A5E52200FC42B1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		34E4802F249D1D2A00FE8222 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -152,17 +421,62 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		348A577325A5E52200FC42B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				348A57B825A5E54200FC42B1 /* PasswordViewModelTests.swift in Sources */,
+				348A57A225A5E54200FC42B1 /* GeneratePasswordPresenterTests.swift in Sources */,
+				348A57AD25A5E54200FC42B1 /* CharacterGatewayTests.swift in Sources */,
+				348A57AF25A5E54200FC42B1 /* GeneratePasswordControllerTests.swift in Sources */,
+				348A57B625A5E54200FC42B1 /* PasswordRuleTests.swift in Sources */,
+				348A577A25A5E52300FC42B1 /* Senha_UnitTests.swift in Sources */,
+				348A57AE25A5E54200FC42B1 /* GeneratePasswordInteractorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		34E4802D249D1D2A00FE8222 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34A345EF25A41E8D00251D6F /* GeneratePasswordPresentableFactory.swift in Sources */,
+				34A3460925A48FE800251D6F /* CharacterGatewayableFactory.swift in Sources */,
+				34A345DA25A3BAAF00251D6F /* GeneratePasswordPresenter.swift in Sources */,
+				34A3460125A42CE600251D6F /* PasswordGeneratedViewFactory.swift in Sources */,
+				34A345F825A42C0B00251D6F /* PasswordSizeViewFactory.swift in Sources */,
+				34E48057249D8E9B00FE8222 /* GeneratorView.swift in Sources */,
+				34E4805A249D9C2D00FE8222 /* SeparatorsView.swift in Sources */,
 				34E48035249D1D2A00FE8222 /* AppDelegate.swift in Sources */,
+				34A345E425A3BD6D00251D6F /* PasswordViewModel.swift in Sources */,
+				34E4805C249D9C8300FE8222 /* SaveView.swift in Sources */,
+				34E48058249D8E9B00FE8222 /* PasswordSizeView.swift in Sources */,
+				34E48052249D8DA400FE8222 /* PasswordGeneratedView.swift in Sources */,
+				34A345F225A41F1800251D6F /* GeneratorViewFactory.swift in Sources */,
+				34A3460525A48B9700251D6F /* CharacterGateway.swift in Sources */,
+				34A345F525A42ABF00251D6F /* CharInclusionViewFactory.swift in Sources */,
+				34A345FE25A42CB200251D6F /* SaveViewFactory.swift in Sources */,
 				34E48037249D1D2A00FE8222 /* SceneDelegate.swift in Sources */,
+				34A345FB25A42C5600251D6F /* SeparatorsViewFactory.swift in Sources */,
 				34E48039249D1D2A00FE8222 /* ContentView.swift in Sources */,
+				34A345D725A3B82300251D6F /* PasswordRule.swift in Sources */,
+				34A345E925A41E1D00251D6F /* GeneratePasswordControllableFactory.swift in Sources */,
+				34A345EC25A41E5300251D6F /* GeneratePasswordInteractableFactory.swift in Sources */,
+				34A345E125A3BCF400251D6F /* Password.swift in Sources */,
+				34A345DD25A3BADB00251D6F /* GeneratePasswordController.swift in Sources */,
+				34A345D325A3B7E100251D6F /* GeneratePasswordInteractor.swift in Sources */,
+				34E4805E249D9CC700FE8222 /* CharInclusionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		348A577D25A5E52300FC42B1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 34E48030249D1D2A00FE8222 /* Senha */;
+			targetProxy = 348A577C25A5E52300FC42B1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		34E4803F249D1D2D00FE8222 /* LaunchScreen.storyboard */ = {
@@ -176,6 +490,48 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		348A577F25A5E52300FC42B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2729VXDM4D;
+				INFOPLIST_FILE = "Senha-UnitTests/Base/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.ronanrodrigo.Senha-UnitTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Senha.app/Senha";
+			};
+			name = Debug;
+		};
+		348A578025A5E52300FC42B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2729VXDM4D;
+				INFOPLIST_FILE = "Senha-UnitTests/Base/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.ronanrodrigo.Senha-UnitTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Senha.app/Senha";
+			};
+			name = Release;
+		};
 		34E48043249D1D2D00FE8222 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -202,6 +558,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -262,6 +619,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -294,17 +652,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = Senha/Main/Senha.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Senha/Base/Senha.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"Senha/Main/Preview Content\"";
-				DEVELOPMENT_TEAM = 2729VXDM4D;
+				DEVELOPMENT_ASSET_PATHS = "\"Senha/Base/Preview Content\"";
+				DEVELOPMENT_TEAM = 5F83KRY2FH;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Senha/Main/Info.plist;
+				INFOPLIST_FILE = Senha/Base/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = app.ronanrodrigo.Senha;
+				PRODUCT_BUNDLE_IDENTIFIER = app.ronanrodrigo.debug.Senha;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
@@ -316,17 +677,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = Senha/Main/Senha.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Senha/Base/Senha.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"Senha/Main/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Senha/Base/Preview Content\"";
 				DEVELOPMENT_TEAM = 2729VXDM4D;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Senha/Main/Info.plist;
+				INFOPLIST_FILE = Senha/Base/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = app.ronanrodrigo.Senha;
+				PRODUCT_BUNDLE_IDENTIFIER = app.ronanrodrigo.debug.Senha;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
@@ -337,6 +701,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		348A577E25A5E52300FC42B1 /* Build configuration list for PBXNativeTarget "Senha-UnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				348A577F25A5E52300FC42B1 /* Debug */,
+				348A578025A5E52300FC42B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		34E4802C249D1D2A00FE8222 /* Build configuration list for PBXProject "Senha" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
