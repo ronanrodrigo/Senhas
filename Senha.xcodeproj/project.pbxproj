@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3419CC6325A6FAC2008DD747 /* GeneratorError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3419CC6225A6FAC2008DD747 /* GeneratorError.swift */; };
+		3419CC6725A70724008DD747 /* Mocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3419CC6625A70724008DD747 /* Mocks.swift */; };
 		348A57A225A5E54200FC42B1 /* GeneratePasswordPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348A578525A5E54200FC42B1 /* GeneratePasswordPresenterTests.swift */; };
 		348A57AD25A5E54200FC42B1 /* CharacterGatewayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348A579225A5E54200FC42B1 /* CharacterGatewayTests.swift */; };
 		348A57AE25A5E54200FC42B1 /* GeneratePasswordInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348A579425A5E54200FC42B1 /* GeneratePasswordInteractorTests.swift */; };
 		348A57AF25A5E54200FC42B1 /* GeneratePasswordControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348A579625A5E54200FC42B1 /* GeneratePasswordControllerTests.swift */; };
 		348A57B625A5E54200FC42B1 /* PasswordRuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348A579F25A5E54200FC42B1 /* PasswordRuleTests.swift */; };
 		348A57B825A5E54200FC42B1 /* PasswordViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348A57A125A5E54200FC42B1 /* PasswordViewModelTests.swift */; };
-		348A57E825A5F00500FC42B1 /* AutoMock.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348A57E725A5F00500FC42B1 /* AutoMock.generated.swift */; };
 		34A345D325A3B7E100251D6F /* GeneratePasswordInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A345D225A3B7E100251D6F /* GeneratePasswordInteractor.swift */; };
 		34A345D725A3B82300251D6F /* PasswordRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A345D625A3B82300251D6F /* PasswordRule.swift */; };
 		34A345DA25A3BAAF00251D6F /* GeneratePasswordPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A345D925A3BAAF00251D6F /* GeneratePasswordPresenter.swift */; };
@@ -56,6 +57,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3419CC6225A6FAC2008DD747 /* GeneratorError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratorError.swift; sourceTree = "<group>"; };
+		3419CC6625A70724008DD747 /* Mocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mocks.swift; sourceTree = "<group>"; };
 		348A577725A5E52200FC42B1 /* Senha-UnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Senha-UnitTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		348A577B25A5E52300FC42B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		348A578525A5E54200FC42B1 /* GeneratePasswordPresenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratePasswordPresenterTests.swift; sourceTree = "<group>"; };
@@ -64,7 +67,6 @@
 		348A579625A5E54200FC42B1 /* GeneratePasswordControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratePasswordControllerTests.swift; sourceTree = "<group>"; };
 		348A579F25A5E54200FC42B1 /* PasswordRuleTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordRuleTests.swift; sourceTree = "<group>"; };
 		348A57A125A5E54200FC42B1 /* PasswordViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordViewModelTests.swift; sourceTree = "<group>"; };
-		348A57E725A5F00500FC42B1 /* AutoMock.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoMock.generated.swift; sourceTree = "<group>"; };
 		34A345D225A3B7E100251D6F /* GeneratePasswordInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratePasswordInteractor.swift; sourceTree = "<group>"; };
 		34A345D625A3B82300251D6F /* PasswordRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordRule.swift; sourceTree = "<group>"; };
 		34A345D925A3BAAF00251D6F /* GeneratePasswordPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratePasswordPresenter.swift; sourceTree = "<group>"; };
@@ -120,9 +122,9 @@
 		348A577825A5E52200FC42B1 /* Senha-UnitTests */ = {
 			isa = PBXGroup;
 			children = (
-				348A57E625A5F00500FC42B1 /* Support */,
 				348A57D925A5E64D00FC42B1 /* Base */,
 				348A578325A5E54200FC42B1 /* Generator */,
+				348A57E625A5F00500FC42B1 /* Support */,
 			);
 			path = "Senha-UnitTests";
 			sourceTree = "<group>";
@@ -191,7 +193,7 @@
 		348A57E625A5F00500FC42B1 /* Support */ = {
 			isa = PBXGroup;
 			children = (
-				348A57E725A5F00500FC42B1 /* AutoMock.generated.swift */,
+				3419CC6625A70724008DD747 /* Mocks.swift */,
 			);
 			path = Support;
 			sourceTree = "<group>";
@@ -226,6 +228,7 @@
 				34A345D625A3B82300251D6F /* PasswordRule.swift */,
 				34A345E025A3BCF400251D6F /* Password.swift */,
 				34A345E325A3BD6D00251D6F /* PasswordViewModel.swift */,
+				3419CC6225A6FAC2008DD747 /* GeneratorError.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -349,6 +352,8 @@
 				348A577D25A5E52300FC42B1 /* PBXTargetDependency */,
 			);
 			name = "Senha-UnitTests";
+			packageProductDependencies = (
+			);
 			productName = "Senha-UnitTests";
 			productReference = 348A577725A5E52200FC42B1 /* Senha-UnitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -360,6 +365,7 @@
 				34E4802D249D1D2A00FE8222 /* Sources */,
 				34E4802E249D1D2A00FE8222 /* Frameworks */,
 				34E4802F249D1D2A00FE8222 /* Resources */,
+				3419CC6C25A7479C008DD747 /* Generate Mocks */,
 			);
 			buildRules = (
 			);
@@ -398,6 +404,8 @@
 				Base,
 			);
 			mainGroup = 34E48028249D1D2A00FE8222;
+			packageReferences = (
+			);
 			productRefGroup = 34E48032249D1D2A00FE8222 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -428,6 +436,27 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3419CC6C25A7479C008DD747 /* Generate Mocks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Generate Mocks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Support/codegen mocks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		348A577325A5E52200FC42B1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -435,9 +464,9 @@
 			files = (
 				348A57B825A5E54200FC42B1 /* PasswordViewModelTests.swift in Sources */,
 				348A57A225A5E54200FC42B1 /* GeneratePasswordPresenterTests.swift in Sources */,
-				348A57E825A5F00500FC42B1 /* AutoMock.generated.swift in Sources */,
 				348A57AD25A5E54200FC42B1 /* CharacterGatewayTests.swift in Sources */,
 				348A57AF25A5E54200FC42B1 /* GeneratePasswordControllerTests.swift in Sources */,
+				3419CC6725A70724008DD747 /* Mocks.swift in Sources */,
 				348A57B625A5E54200FC42B1 /* PasswordRuleTests.swift in Sources */,
 				348A57AE25A5E54200FC42B1 /* GeneratePasswordInteractorTests.swift in Sources */,
 			);
@@ -450,6 +479,7 @@
 				34A345EF25A41E8D00251D6F /* GeneratePasswordPresentableFactory.swift in Sources */,
 				34A3460925A48FE800251D6F /* CharacterGatewayableFactory.swift in Sources */,
 				34A345DA25A3BAAF00251D6F /* GeneratePasswordPresenter.swift in Sources */,
+				3419CC6325A6FAC2008DD747 /* GeneratorError.swift in Sources */,
 				34A3460125A42CE600251D6F /* PasswordGeneratedViewFactory.swift in Sources */,
 				34A345F825A42C0B00251D6F /* PasswordSizeViewFactory.swift in Sources */,
 				34E48057249D8E9B00FE8222 /* GeneratorView.swift in Sources */,

@@ -15,39 +15,59 @@ final class GeneratePasswordInteractor: GeneratePasswordInteractable {
     }
 
     func generate(with passwordOptions: PasswordOptions) {
-        let passwordCharacters: [String] = Array(repeating: passwordOptions.separator,
-                                                 count: passwordOptions.length)
-        var characters: [() -> Character] = []
+        guard passwordOptions.length > 2 else {
+            return presenter.handle(error: .invalidLength)
+        }
+        let containsInclusion = passwordOptions.include.letters ||
+            passwordOptions.include.numbers ||
+            passwordOptions.include.symbols
+        guard containsInclusion else {
+            return presenter.handle(error: .withoutInclusions)
+        }
+
+        var charactersProviders = makeCharacterProviders(passwordOptions)
+        var passwordArray: [String] = []
+        while passwordArray.count < passwordOptions.length {
+            if charactersProviders.isEmpty {
+                charactersProviders = makeCharacterProviders(passwordOptions)
+            }
+            guard let characterProvider = charactersProviders.popLast() else { break }
+            passwordArray.append(characterProvider())
+        }
+
+        let generatedPassword: String
+        if passwordOptions.include.separators {
+            generatedPassword = addSeparators(passwordArray, passwordOptions)
+        } else {
+            generatedPassword = passwordArray.joined()
+        }
+
+        presenter.update(password: generatedPassword)
+    }
+
+    private func makeCharacterProviders(_ passwordOptions: PasswordOptions) -> [() -> String] {
+        var mutableCharactersList: [() -> String] = []
         if passwordOptions.include.letters {
-            characters.append(gateway.lowerCase)
-            characters.append(gateway.upperCase)
+            mutableCharactersList.append(gateway.letter)
         }
         if passwordOptions.include.numbers {
-            characters.append(gateway.number)
+            mutableCharactersList.append(gateway.number)
         }
         if passwordOptions.include.symbols {
-            characters.append(gateway.symbol)
+            mutableCharactersList.append(gateway.symbol)
         }
+        return mutableCharactersList.shuffled()
+    }
 
-        let passwordArray = passwordCharacters.reduce([String]()) { (result, separator) -> [String] in
-            guard let element = characters.randomElement() else { return result }
-            let newChar = String(element())
-            return result + [newChar]
-        }
-
-        var password: String = ""
-        if passwordOptions.include.separators {
-            passwordArray.enumerated().forEach { (enumeratedSequence) in
-                password = password + enumeratedSequence.element
-                if password.count % 4 == 0 {
-                    password.removeLast()
-                    password += passwordOptions.separator
-                }
+    private func addSeparators(_ passwordArray: [String], _ passwordOptions: PasswordOptions) -> String{
+        var separatedPassword = ""
+        passwordArray.forEach {
+            separatedPassword += $0
+            if separatedPassword.count % 4 == 0 {
+                separatedPassword.removeLast()
+                separatedPassword += passwordOptions.separator
             }
-        } else {
-            password = passwordArray.joined()
         }
-
-        presenter.update(with: password)
+        return separatedPassword
     }
 }

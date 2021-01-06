@@ -2,17 +2,19 @@
 
 command=$1
 senha_path="$( cd "$(dirname "$0")"; cd .. ; pwd -P )"
+support_path="$(cd "$(dirname "$0")" && pwd)"
 
 generate_mocks() {
-    mock_sources="$senha_path/Senha"
-    mock_output="$senha_path/Senha-UnitTests/Support"
-    mock_templates="$senha_path/Support"
-    if [ "$(ls $mock_output)" ]; then
-        chmod 755 $mock_output/*
+    mock_sources_path="$senha_path/Senha"
+    mock_output_path="$senha_path/Senha-UnitTests/Support"
+    if [ "$(ls $mock_output_path)" ]; then
+        chmod 755 $mock_output_path/*
     fi
-    sourcery --sources $mock_sources --templates $mock_templates --output $mock_output --disableCache --quiet
-    if [ "$(ls $mock_output)" ]; then
-        chmod 444 $mock_output/*
+
+    $support_path/mockolo -s $mock_sources_path -d "$mock_output_path/Mocks.swift" -i "Senha" --enable-args-history
+
+    if [ "$(ls $mock_output_path)" ]; then
+        chmod 444 $mock_output_path/*
     fi
 }
 

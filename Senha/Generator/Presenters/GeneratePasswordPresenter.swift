@@ -1,7 +1,9 @@
 import Combine
 
+/// @mockable
 protocol GeneratePasswordMutablePresentable {
-    func update(with password: Password)
+    func update(password: Password)
+    func handle(error: GeneratorError)
 }
 
 protocol GeneratePasswordPresentable: ObservableObject, GeneratePasswordMutablePresentable {
@@ -11,8 +13,10 @@ protocol GeneratePasswordPresentable: ObservableObject, GeneratePasswordMutableP
 final class GeneratePasswordPresenter: GeneratePasswordPresentable {
     @Published var generatedPassword = PasswordViewModel()
 
-    func update(with password: Password) {
+    func update(password: Password) {
         let viewModel = PasswordViewModel(password: password)
         generatedPassword = viewModel
     }
+
+    func handle(error: GeneratorError) { }
 }
