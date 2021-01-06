@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+
+command=$1
+senha_path="$( cd "$(dirname "$0")"; cd .. ; pwd -P )"
+
+generate_mocks() {
+    mock_sources="$senha_path/Senha"
+    mock_output="$senha_path/Senha-UnitTests/Support"
+    mock_templates="$senha_path/Support"
+    if [ "$(ls $mock_output)" ]; then
+        chmod 755 $mock_output/*
+    fi
+    sourcery --sources $mock_sources --templates $mock_templates --output $mock_output --disableCache --quiet
+    if [ "$(ls $mock_output)" ]; then
+        chmod 444 $mock_output/*
+    fi
+}
+
+if [[ $command = "mocks" ]]; then
+    echo "Generating mocks"
+    generate_mocks
+
+    echo "Finish 🍾"
+fi

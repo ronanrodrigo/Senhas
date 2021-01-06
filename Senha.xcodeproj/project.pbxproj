@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		348A577A25A5E52300FC42B1 /* Senha_UnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348A577925A5E52200FC42B1 /* Senha_UnitTests.swift */; };
 		348A57A225A5E54200FC42B1 /* GeneratePasswordPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348A578525A5E54200FC42B1 /* GeneratePasswordPresenterTests.swift */; };
 		348A57AD25A5E54200FC42B1 /* CharacterGatewayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348A579225A5E54200FC42B1 /* CharacterGatewayTests.swift */; };
 		348A57AE25A5E54200FC42B1 /* GeneratePasswordInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348A579425A5E54200FC42B1 /* GeneratePasswordInteractorTests.swift */; };
 		348A57AF25A5E54200FC42B1 /* GeneratePasswordControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348A579625A5E54200FC42B1 /* GeneratePasswordControllerTests.swift */; };
 		348A57B625A5E54200FC42B1 /* PasswordRuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348A579F25A5E54200FC42B1 /* PasswordRuleTests.swift */; };
 		348A57B825A5E54200FC42B1 /* PasswordViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348A57A125A5E54200FC42B1 /* PasswordViewModelTests.swift */; };
+		348A57E825A5F00500FC42B1 /* AutoMock.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348A57E725A5F00500FC42B1 /* AutoMock.generated.swift */; };
 		34A345D325A3B7E100251D6F /* GeneratePasswordInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A345D225A3B7E100251D6F /* GeneratePasswordInteractor.swift */; };
 		34A345D725A3B82300251D6F /* PasswordRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A345D625A3B82300251D6F /* PasswordRule.swift */; };
 		34A345DA25A3BAAF00251D6F /* GeneratePasswordPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A345D925A3BAAF00251D6F /* GeneratePasswordPresenter.swift */; };
@@ -57,7 +57,6 @@
 
 /* Begin PBXFileReference section */
 		348A577725A5E52200FC42B1 /* Senha-UnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Senha-UnitTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		348A577925A5E52200FC42B1 /* Senha_UnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Senha_UnitTests.swift; sourceTree = "<group>"; };
 		348A577B25A5E52300FC42B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		348A578525A5E54200FC42B1 /* GeneratePasswordPresenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratePasswordPresenterTests.swift; sourceTree = "<group>"; };
 		348A579225A5E54200FC42B1 /* CharacterGatewayTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterGatewayTests.swift; sourceTree = "<group>"; };
@@ -65,6 +64,7 @@
 		348A579625A5E54200FC42B1 /* GeneratePasswordControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratePasswordControllerTests.swift; sourceTree = "<group>"; };
 		348A579F25A5E54200FC42B1 /* PasswordRuleTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordRuleTests.swift; sourceTree = "<group>"; };
 		348A57A125A5E54200FC42B1 /* PasswordViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordViewModelTests.swift; sourceTree = "<group>"; };
+		348A57E725A5F00500FC42B1 /* AutoMock.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoMock.generated.swift; sourceTree = "<group>"; };
 		34A345D225A3B7E100251D6F /* GeneratePasswordInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratePasswordInteractor.swift; sourceTree = "<group>"; };
 		34A345D625A3B82300251D6F /* PasswordRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordRule.swift; sourceTree = "<group>"; };
 		34A345D925A3BAAF00251D6F /* GeneratePasswordPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratePasswordPresenter.swift; sourceTree = "<group>"; };
@@ -120,6 +120,7 @@
 		348A577825A5E52200FC42B1 /* Senha-UnitTests */ = {
 			isa = PBXGroup;
 			children = (
+				348A57E625A5F00500FC42B1 /* Support */,
 				348A57D925A5E64D00FC42B1 /* Base */,
 				348A578325A5E54200FC42B1 /* Generator */,
 			);
@@ -183,9 +184,16 @@
 			isa = PBXGroup;
 			children = (
 				348A577B25A5E52300FC42B1 /* Info.plist */,
-				348A577925A5E52200FC42B1 /* Senha_UnitTests.swift */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		348A57E625A5F00500FC42B1 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				348A57E725A5F00500FC42B1 /* AutoMock.generated.swift */,
+			);
+			path = Support;
 			sourceTree = "<group>";
 		};
 		34A345CB25A3B78B00251D6F /* Interactors */ = {
@@ -427,10 +435,10 @@
 			files = (
 				348A57B825A5E54200FC42B1 /* PasswordViewModelTests.swift in Sources */,
 				348A57A225A5E54200FC42B1 /* GeneratePasswordPresenterTests.swift in Sources */,
+				348A57E825A5F00500FC42B1 /* AutoMock.generated.swift in Sources */,
 				348A57AD25A5E54200FC42B1 /* CharacterGatewayTests.swift in Sources */,
 				348A57AF25A5E54200FC42B1 /* GeneratePasswordControllerTests.swift in Sources */,
 				348A57B625A5E54200FC42B1 /* PasswordRuleTests.swift in Sources */,
-				348A577A25A5E52300FC42B1 /* Senha_UnitTests.swift in Sources */,
 				348A57AE25A5E54200FC42B1 /* GeneratePasswordInteractorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

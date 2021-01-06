@@ -1,5 +1,6 @@
 import Foundation
 
+// sourcery: AutoMock
 protocol CharacterGatewayable {
     func lowerCase() -> Character
     func upperCase() -> Character

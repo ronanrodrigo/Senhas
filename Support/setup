@@ -1,0 +1,53 @@
+#!/usr/bin/env bash
+RED_COLOR='\033[0;31m'
+NO_COLOR='\033[0m'
+
+setup_enviroment() {
+    validate_xcode_version
+    install_system_basics
+    install_brew_dependencies
+    open_project
+}
+
+validate_xcode_version() {
+    echo "Validating Xcode version..."
+    xcode_version=$(xcodebuild -version|grep -e '\d\+\.\d\+' -o)
+    minimum_version=12.0
+    if (( $(echo "$xcode_version < $minimum_version" | bc -l) )); then
+        echo -e "${RED_COLOR}You must have/select Xcode $minimum_version+"
+        echo "Try: sudo xcode-select -s /Applications/Xcode[Version].app"
+        echo -e "Or download and install Xcode above $minimum_version${NO_COLOR}"
+    fi
+}
+
+install_system_basics() {
+    echo "Setup system basics..."
+    if ! type "brew" &> /dev/null; then
+        echo "Installing brew..."
+        eval '/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)'
+    fi
+}
+
+install_brew_dependencies() {
+    echo "Setup brew packages..."
+    brew_dependencies=(swiftlint sourcery)
+
+    for brew_dependency in "${brew_dependencies[@]}"; do
+        if ! brew ls --versions ${brew_dependency} > /dev/null; then
+            echo "Installing $brew_dependency..."
+            brew install $brew_dependency
+        fi
+    done
+}
+
+open_project() {
+    while true; do
+        read -p "Open project on Xcode? " yn
+        case $yn in
+            [Yy]* ) xed .; break;;
+            * ) exit;;
+        esac
+    done
+}
+
+setup_enviroment
