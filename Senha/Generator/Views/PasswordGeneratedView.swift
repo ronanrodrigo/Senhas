@@ -16,6 +16,9 @@ struct PasswordGeneratedView: View {
             Text(passwordViewModel.password)
                 .font(.title)
                 .fontWeight(.light)
+            Spacer()
+            Image(systemName: "doc.on.doc")
+                .foregroundColor(.gray)
         }
         .padding(.vertical)
         .onTapGesture {
