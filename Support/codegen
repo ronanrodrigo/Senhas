@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+
+command=$1
+senha_path="$( cd "$(dirname "$0")"; cd .. ; pwd -P )"
+support_path="$(cd "$(dirname "$0")" && pwd)"
+
+generate_mocks() {
+    mock_sources_path="$senha_path/Senha"
+    mock_output_path="$senha_path/Senha-UnitTests/Support"
+    if [ "$(ls $mock_output_path)" ]; then
+        chmod 755 $mock_output_path/*
+    fi
+
+    $support_path/mockolo -s $mock_sources_path -d "$mock_output_path/Mocks.swift" -i "Senha" --enable-args-history
+
+    if [ "$(ls $mock_output_path)" ]; then
+        chmod 444 $mock_output_path/*
+    fi
+}
+
+if [[ $command = "mocks" ]]; then
+    echo "Generating mocks"
+    generate_mocks
+
+    echo "Finish 🍾"
+fi

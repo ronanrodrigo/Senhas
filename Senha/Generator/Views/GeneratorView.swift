@@ -13,7 +13,7 @@ struct GeneratorView<Controller: GeneratePasswordControllable, Presenter: Genera
         Form {
             Section {
                 PasswordGeneratedViewFactory.make(
-                    presenter.generatedPassword)
+                    presenter.passwordViewModel)
             }
             Section {
                 PasswordSizeViewFactory.make(

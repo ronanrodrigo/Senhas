@@ -1,18 +1,29 @@
 import Combine
 
+/// @mockable
 protocol GeneratePasswordMutablePresentable {
-    func update(with password: Password)
+    func update(password: Password)
+    func handle(error: GeneratorError)
 }
 
 protocol GeneratePasswordPresentable: ObservableObject, GeneratePasswordMutablePresentable {
-    var generatedPassword: PasswordViewModel { get }
+    var passwordViewModel: PasswordViewModel { get }
 }
 
 final class GeneratePasswordPresenter: GeneratePasswordPresentable {
-    @Published var generatedPassword = PasswordViewModel()
+    @Published var passwordViewModel = PasswordViewModel()
 
-    func update(with password: Password) {
+    func update(password: Password) {
         let viewModel = PasswordViewModel(password: password)
-        generatedPassword = viewModel
+        passwordViewModel = viewModel
+    }
+
+    func handle(error: GeneratorError) {
+        let viewModel: PasswordViewModel
+        switch error {
+        case .invalidLength, .withoutInclusions:
+            viewModel = PasswordViewModel(errorMessage: "Invalid options")
+        }
+        passwordViewModel = viewModel
     }
 }

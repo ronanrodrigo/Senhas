@@ -41,7 +41,7 @@ final class GeneratePasswordController: GeneratePasswordControllable {
 
         let otherOptionsWithIncludes = Publishers.CombineLatest3(
             includes,
-            $length.debounce(for: 0.3, scheduler: RunLoop.main),
+            $length,
             $separator
         )
         .map { combinedValues -> PasswordOptions in
