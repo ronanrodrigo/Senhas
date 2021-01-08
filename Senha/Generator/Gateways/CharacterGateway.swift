@@ -1,26 +1,27 @@
 import Foundation
 
+/// @mockable
 protocol CharacterGatewayable {
-    func lowerCase() -> Character
-    func upperCase() -> Character
-    func symbol() -> Character
-    func number() -> Character
+    func letter() -> String
+    func symbol() -> String
+    func number() -> String
 }
 
 final class CharacterGateway: CharacterGatewayable {
-    func lowerCase() -> Character {
-        "abcdefghjklmnpqrstuvwxyz".randomElement()!
+    func letter() -> String {
+        let smallCases = "abcdefghjklmnpqrstuvwxyz"
+        let upperCases = "ABCDEFGHJKLMNPQRSTUVWXYZ"
+        let char = (smallCases + upperCases).randomElement()!
+        return String(char)
     }
 
-    func upperCase() -> Character {
-        "ABCDEFGHJKLMNPQRSTUVWXYZ".randomElement()!
+    func symbol() -> String {
+        let char = "!@#$%&*{}|\\:;/?.,=()".randomElement()!
+        return String(char)
     }
 
-    func symbol() -> Character {
-        "!@#$%&*{}|\\:;/?.,=()".randomElement()!
-    }
-
-    func number() -> Character {
-        "0123456789".randomElement()!
+    func number() -> String {
+        let char = "0123456789".randomElement()!
+        return String(char)
     }
 }
