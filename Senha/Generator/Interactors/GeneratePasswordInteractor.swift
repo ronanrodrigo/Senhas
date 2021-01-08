@@ -1,5 +1,6 @@
 import Foundation
 
+/// @mockable
 protocol GeneratePasswordInteractable {
     func generate(with passwordOptions: PasswordOptions)
 }
