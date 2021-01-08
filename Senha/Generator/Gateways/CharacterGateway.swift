@@ -15,11 +15,6 @@ final class CharacterGateway: CharacterGatewayable {
         return String(char)
     }
 
-    func upperCase() -> String {
-        let char = "ABCDEFGHJKLMNPQRSTUVWXYZ".randomElement()!
-        return String(char)
-    }
-
     func symbol() -> String {
         let char = "!@#$%&*{}|\\:;/?.,=()".randomElement()!
         return String(char)

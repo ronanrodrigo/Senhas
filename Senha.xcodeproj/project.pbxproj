@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3419CC6325A6FAC2008DD747 /* GeneratorError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3419CC6225A6FAC2008DD747 /* GeneratorError.swift */; };
 		3419CC6725A70724008DD747 /* Mocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3419CC6625A70724008DD747 /* Mocks.swift */; };
+		3475966C25A873C500A6D11E /* SenhaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3475966B25A873C500A6D11E /* SenhaApp.swift */; };
 		348A57A225A5E54200FC42B1 /* GeneratePasswordPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348A578525A5E54200FC42B1 /* GeneratePasswordPresenterTests.swift */; };
 		348A57AD25A5E54200FC42B1 /* CharacterGatewayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348A579225A5E54200FC42B1 /* CharacterGatewayTests.swift */; };
 		348A57AE25A5E54200FC42B1 /* GeneratePasswordInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348A579425A5E54200FC42B1 /* GeneratePasswordInteractorTests.swift */; };
@@ -28,21 +29,15 @@
 		34A345F525A42ABF00251D6F /* CharInclusionViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A345F425A42ABF00251D6F /* CharInclusionViewFactory.swift */; };
 		34A345F825A42C0B00251D6F /* PasswordSizeViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A345F725A42C0B00251D6F /* PasswordSizeViewFactory.swift */; };
 		34A345FB25A42C5600251D6F /* SeparatorsViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A345FA25A42C5600251D6F /* SeparatorsViewFactory.swift */; };
-		34A345FE25A42CB200251D6F /* SaveViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A345FD25A42CB200251D6F /* SaveViewFactory.swift */; };
 		34A3460125A42CE600251D6F /* PasswordGeneratedViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A3460025A42CE600251D6F /* PasswordGeneratedViewFactory.swift */; };
 		34A3460525A48B9700251D6F /* CharacterGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A3460425A48B9700251D6F /* CharacterGateway.swift */; };
 		34A3460925A48FE800251D6F /* CharacterGatewayableFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A3460825A48FE800251D6F /* CharacterGatewayableFactory.swift */; };
-		34E48035249D1D2A00FE8222 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E48034249D1D2A00FE8222 /* AppDelegate.swift */; };
-		34E48037249D1D2A00FE8222 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E48036249D1D2A00FE8222 /* SceneDelegate.swift */; };
-		34E48039249D1D2A00FE8222 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E48038249D1D2A00FE8222 /* ContentView.swift */; };
 		34E4803B249D1D2D00FE8222 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34E4803A249D1D2D00FE8222 /* Assets.xcassets */; };
 		34E4803E249D1D2D00FE8222 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34E4803D249D1D2D00FE8222 /* Preview Assets.xcassets */; };
-		34E48041249D1D2D00FE8222 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34E4803F249D1D2D00FE8222 /* LaunchScreen.storyboard */; };
 		34E48052249D8DA400FE8222 /* PasswordGeneratedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E48051249D8DA400FE8222 /* PasswordGeneratedView.swift */; };
 		34E48057249D8E9B00FE8222 /* GeneratorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E48055249D8E9B00FE8222 /* GeneratorView.swift */; };
 		34E48058249D8E9B00FE8222 /* PasswordSizeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E48056249D8E9B00FE8222 /* PasswordSizeView.swift */; };
 		34E4805A249D9C2D00FE8222 /* SeparatorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E48059249D9C2D00FE8222 /* SeparatorsView.swift */; };
-		34E4805C249D9C8300FE8222 /* SaveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E4805B249D9C8300FE8222 /* SaveView.swift */; };
 		34E4805E249D9CC700FE8222 /* CharInclusionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E4805D249D9CC700FE8222 /* CharInclusionView.swift */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +54,7 @@
 /* Begin PBXFileReference section */
 		3419CC6225A6FAC2008DD747 /* GeneratorError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratorError.swift; sourceTree = "<group>"; };
 		3419CC6625A70724008DD747 /* Mocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mocks.swift; sourceTree = "<group>"; };
+		3475966B25A873C500A6D11E /* SenhaApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SenhaApp.swift; sourceTree = "<group>"; };
 		348A577725A5E52200FC42B1 /* Senha-UnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Senha-UnitTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		348A577B25A5E52300FC42B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		348A578525A5E54200FC42B1 /* GeneratePasswordPresenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratePasswordPresenterTests.swift; sourceTree = "<group>"; };
@@ -80,24 +76,18 @@
 		34A345F425A42ABF00251D6F /* CharInclusionViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharInclusionViewFactory.swift; sourceTree = "<group>"; };
 		34A345F725A42C0B00251D6F /* PasswordSizeViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordSizeViewFactory.swift; sourceTree = "<group>"; };
 		34A345FA25A42C5600251D6F /* SeparatorsViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeparatorsViewFactory.swift; sourceTree = "<group>"; };
-		34A345FD25A42CB200251D6F /* SaveViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveViewFactory.swift; sourceTree = "<group>"; };
 		34A3460025A42CE600251D6F /* PasswordGeneratedViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordGeneratedViewFactory.swift; sourceTree = "<group>"; };
 		34A3460425A48B9700251D6F /* CharacterGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterGateway.swift; sourceTree = "<group>"; };
 		34A3460825A48FE800251D6F /* CharacterGatewayableFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterGatewayableFactory.swift; sourceTree = "<group>"; };
 		34E48031249D1D2A00FE8222 /* Senha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Senha.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		34E48034249D1D2A00FE8222 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		34E48036249D1D2A00FE8222 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		34E48038249D1D2A00FE8222 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		34E4803A249D1D2D00FE8222 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		34E4803D249D1D2D00FE8222 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		34E48040249D1D2D00FE8222 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		34E48042249D1D2D00FE8222 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		34E4804A249D1F3900FE8222 /* Senha.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Senha.entitlements; sourceTree = "<group>"; };
 		34E48051249D8DA400FE8222 /* PasswordGeneratedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordGeneratedView.swift; sourceTree = "<group>"; };
 		34E48055249D8E9B00FE8222 /* GeneratorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratorView.swift; sourceTree = "<group>"; };
 		34E48056249D8E9B00FE8222 /* PasswordSizeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordSizeView.swift; sourceTree = "<group>"; };
 		34E48059249D9C2D00FE8222 /* SeparatorsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeparatorsView.swift; sourceTree = "<group>"; };
-		34E4805B249D9C8300FE8222 /* SaveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveView.swift; sourceTree = "<group>"; };
 		34E4805D249D9CC700FE8222 /* CharInclusionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharInclusionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -243,7 +233,6 @@
 				34A345F425A42ABF00251D6F /* CharInclusionViewFactory.swift */,
 				34A345F725A42C0B00251D6F /* PasswordSizeViewFactory.swift */,
 				34A345FA25A42C5600251D6F /* SeparatorsViewFactory.swift */,
-				34A345FD25A42CB200251D6F /* SaveViewFactory.swift */,
 				34A3460025A42CE600251D6F /* PasswordGeneratedViewFactory.swift */,
 				34A3460825A48FE800251D6F /* CharacterGatewayableFactory.swift */,
 			);
@@ -296,14 +285,11 @@
 		34E48049249D1E2900FE8222 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				34E48034249D1D2A00FE8222 /* AppDelegate.swift */,
 				34E4803A249D1D2D00FE8222 /* Assets.xcassets */,
-				34E48038249D1D2A00FE8222 /* ContentView.swift */,
 				34E48042249D1D2D00FE8222 /* Info.plist */,
-				34E4803F249D1D2D00FE8222 /* LaunchScreen.storyboard */,
 				34E4803C249D1D2D00FE8222 /* Preview Content */,
-				34E48036249D1D2A00FE8222 /* SceneDelegate.swift */,
 				34E4804A249D1F3900FE8222 /* Senha.entitlements */,
+				3475966B25A873C500A6D11E /* SenhaApp.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -329,7 +315,6 @@
 				34E4805D249D9CC700FE8222 /* CharInclusionView.swift */,
 				34E48051249D8DA400FE8222 /* PasswordGeneratedView.swift */,
 				34E48056249D8E9B00FE8222 /* PasswordSizeView.swift */,
-				34E4805B249D9C8300FE8222 /* SaveView.swift */,
 				34E48059249D9C2D00FE8222 /* SeparatorsView.swift */,
 			);
 			path = Views;
@@ -428,7 +413,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				34E48041249D1D2D00FE8222 /* LaunchScreen.storyboard in Resources */,
 				34E4803E249D1D2D00FE8222 /* Preview Assets.xcassets in Resources */,
 				34E4803B249D1D2D00FE8222 /* Assets.xcassets in Resources */,
 			);
@@ -484,18 +468,14 @@
 				34A345F825A42C0B00251D6F /* PasswordSizeViewFactory.swift in Sources */,
 				34E48057249D8E9B00FE8222 /* GeneratorView.swift in Sources */,
 				34E4805A249D9C2D00FE8222 /* SeparatorsView.swift in Sources */,
-				34E48035249D1D2A00FE8222 /* AppDelegate.swift in Sources */,
 				34A345E425A3BD6D00251D6F /* PasswordViewModel.swift in Sources */,
-				34E4805C249D9C8300FE8222 /* SaveView.swift in Sources */,
 				34E48058249D8E9B00FE8222 /* PasswordSizeView.swift in Sources */,
 				34E48052249D8DA400FE8222 /* PasswordGeneratedView.swift in Sources */,
+				3475966C25A873C500A6D11E /* SenhaApp.swift in Sources */,
 				34A345F225A41F1800251D6F /* GeneratorViewFactory.swift in Sources */,
 				34A3460525A48B9700251D6F /* CharacterGateway.swift in Sources */,
 				34A345F525A42ABF00251D6F /* CharInclusionViewFactory.swift in Sources */,
-				34A345FE25A42CB200251D6F /* SaveViewFactory.swift in Sources */,
-				34E48037249D1D2A00FE8222 /* SceneDelegate.swift in Sources */,
 				34A345FB25A42C5600251D6F /* SeparatorsViewFactory.swift in Sources */,
-				34E48039249D1D2A00FE8222 /* ContentView.swift in Sources */,
 				34A345D725A3B82300251D6F /* PasswordRule.swift in Sources */,
 				34A345E925A41E1D00251D6F /* GeneratePasswordControllableFactory.swift in Sources */,
 				34A345EC25A41E5300251D6F /* GeneratePasswordInteractableFactory.swift in Sources */,
@@ -515,17 +495,6 @@
 			targetProxy = 348A577C25A5E52300FC42B1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		34E4803F249D1D2D00FE8222 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				34E48040249D1D2D00FE8222 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		348A577F25A5E52300FC42B1 /* Debug */ = {
