@@ -1,13 +1,25 @@
 import Combine
 
-class PasswordViewModel: ObservableObject {
+struct PasswordViewModel: Equatable {
     let password: String
-
-    init(password: String) {
-        self.password = password
-    }
+    let errorMessage: String
+    let showErrorMessage: Bool
 
     init() {
         self.password = ""
+        self.errorMessage = ""
+        self.showErrorMessage = false
+    }
+
+    init(password: String) {
+        self.password = password
+        self.errorMessage = ""
+        self.showErrorMessage = false
+    }
+
+    init(errorMessage: String) {
+        self.password = ""
+        self.errorMessage = errorMessage
+        self.showErrorMessage = true
     }
 }
