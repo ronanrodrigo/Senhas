@@ -14,7 +14,7 @@ final class GeneratePasswordPresenterTests: XCTestCase {
     }
 
     func test_handleError_whenInvalidLengthError_thenPropagateInvalidOptionsMessage() {
-        let expectedViewModel = PasswordViewModel(errorMessage: "Invalid options")
+        let expectedViewModel = PasswordViewModel(errorMessage: L10n.Generator.Error.invalidOptions)
 
         presenter.handle(error: .invalidLength)
 
@@ -22,7 +22,7 @@ final class GeneratePasswordPresenterTests: XCTestCase {
     }
 
     func test_handleError_whenWithoutInclusions_thenPropagateInvalidOptionsMessage() {
-        let expectedViewModel = PasswordViewModel(errorMessage: "Invalid options")
+        let expectedViewModel = PasswordViewModel(errorMessage: L10n.Generator.Error.invalidOptions)
 
         presenter.handle(error: .withoutInclusions)
 
