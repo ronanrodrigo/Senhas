@@ -2,6 +2,7 @@
 
 [![Coverage](https://img.shields.io/codecov/c/github/ronanrodrigo/Senha?token=1YPUQPH2ZQ)](https://codecov.io/gh/ronanrodrigo/Senha)
 [![Bitrise](https://img.shields.io/bitrise/8fa4c5aee88f036f/main?token=tRzI0mOUUp0rnhPyJ4HaXQ)](https://app.bitrise.io/app/8fa4c5aee88f036f)
+[![Codebeat](https://codebeat.co/badges/f497cf11-7c7a-43f5-a82a-932c2e70f5cf)](https://codebeat.co/projects/github-com-ronanrodrigo-senha-main)
 
 ---
 
