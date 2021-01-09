@@ -15,6 +15,8 @@
 		348A57AE25A5E54200FC42B1 /* GeneratePasswordInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348A579425A5E54200FC42B1 /* GeneratePasswordInteractorTests.swift */; };
 		348A57AF25A5E54200FC42B1 /* GeneratePasswordControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348A579625A5E54200FC42B1 /* GeneratePasswordControllerTests.swift */; };
 		348A57B825A5E54200FC42B1 /* PasswordViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348A57A125A5E54200FC42B1 /* PasswordViewModelTests.swift */; };
+		348CB62225A94D21006C1EE2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 348CB62425A94D21006C1EE2 /* Localizable.strings */; };
+		348CB62B25A94F74006C1EE2 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348CB62A25A94F74006C1EE2 /* Strings.swift */; };
 		34A345D325A3B7E100251D6F /* GeneratePasswordInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A345D225A3B7E100251D6F /* GeneratePasswordInteractor.swift */; };
 		34A345D725A3B82300251D6F /* PasswordOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A345D625A3B82300251D6F /* PasswordOptions.swift */; };
 		34A345DA25A3BAAF00251D6F /* GeneratePasswordPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A345D925A3BAAF00251D6F /* GeneratePasswordPresenter.swift */; };
@@ -61,6 +63,9 @@
 		348A579425A5E54200FC42B1 /* GeneratePasswordInteractorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratePasswordInteractorTests.swift; sourceTree = "<group>"; };
 		348A579625A5E54200FC42B1 /* GeneratePasswordControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratePasswordControllerTests.swift; sourceTree = "<group>"; };
 		348A57A125A5E54200FC42B1 /* PasswordViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordViewModelTests.swift; sourceTree = "<group>"; };
+		348CB62325A94D21006C1EE2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		348CB62725A94D29006C1EE2 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		348CB62A25A94F74006C1EE2 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		34A345D225A3B7E100251D6F /* GeneratePasswordInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratePasswordInteractor.swift; sourceTree = "<group>"; };
 		34A345D625A3B82300251D6F /* PasswordOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordOptions.swift; sourceTree = "<group>"; };
 		34A345D925A3BAAF00251D6F /* GeneratePasswordPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratePasswordPresenter.swift; sourceTree = "<group>"; };
@@ -287,6 +292,8 @@
 				34E4803C249D1D2D00FE8222 /* Preview Content */,
 				34E4804A249D1F3900FE8222 /* Senha.entitlements */,
 				3475966B25A873C500A6D11E /* SenhaApp.swift */,
+				348CB62425A94D21006C1EE2 /* Localizable.strings */,
+				348CB62A25A94F74006C1EE2 /* Strings.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -348,6 +355,7 @@
 				34E4802E249D1D2A00FE8222 /* Frameworks */,
 				34E4802F249D1D2A00FE8222 /* Resources */,
 				3419CC6C25A7479C008DD747 /* Generate Mocks */,
+				348CB62E25A95416006C1EE2 /* Generate Strings */,
 			);
 			buildRules = (
 			);
@@ -384,6 +392,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"pt-BR",
 			);
 			mainGroup = 34E48028249D1D2A00FE8222;
 			packageReferences = (
@@ -411,6 +420,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				34E4803E249D1D2D00FE8222 /* Preview Assets.xcassets in Resources */,
+				348CB62225A94D21006C1EE2 /* Localizable.strings in Resources */,
 				34E4803B249D1D2D00FE8222 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -435,6 +445,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "./Support/codegen mocks\n";
+		};
+		348CB62E25A95416006C1EE2 /* Generate Strings */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Generate Strings";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Support/codegen strings\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -466,6 +494,7 @@
 				34E4805A249D9C2D00FE8222 /* SeparatorsView.swift in Sources */,
 				34A345E425A3BD6D00251D6F /* PasswordViewModel.swift in Sources */,
 				34E48058249D8E9B00FE8222 /* PasswordSizeView.swift in Sources */,
+				348CB62B25A94F74006C1EE2 /* Strings.swift in Sources */,
 				34E48052249D8DA400FE8222 /* PasswordGeneratedView.swift in Sources */,
 				3475966C25A873C500A6D11E /* SenhaApp.swift in Sources */,
 				34A345F225A41F1800251D6F /* GeneratorViewFactory.swift in Sources */,
@@ -491,6 +520,18 @@
 			targetProxy = 348A577C25A5E52300FC42B1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		348CB62425A94D21006C1EE2 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				348CB62325A94D21006C1EE2 /* en */,
+				348CB62725A94D29006C1EE2 /* pt-BR */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		348A577F25A5E52300FC42B1 /* Debug */ = {

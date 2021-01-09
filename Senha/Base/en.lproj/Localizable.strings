@@ -1,0 +1,7 @@
+"Generator.Title" = "Password Generator";
+"Generator.Length" = "Length";
+"Generator.Numbers" = "Numbers";
+"Generator.Letters" = "Letters";
+"Generator.Symbols" = "Symbols";
+"Generator.Separator" = "Separator";
+"Generator.Error.InvalidOptions" = "Invalid Options";

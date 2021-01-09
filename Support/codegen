@@ -18,9 +18,25 @@ generate_mocks() {
     fi
 }
 
+generate_strings() {
+    strings_output_path="$senha_path/Senha/Base/Strings.swift"
+    localizable_strings_path="$senha_path/Senha/Base/en.lproj/Localizable.strings"
+    chmod 755 $strings_output_path
+    swiftgen run strings $localizable_strings_path --templateName structured-swift5 --output $strings_output_path
+    chmod 444 $strings_output_path
+}
+
 if [[ $command = "mocks" ]]; then
     echo "Generating mocks"
     generate_mocks
 
     echo "Finish 🍾"
 fi
+
+if [[ $command = "strings" ]]; then
+    echo "Generating strings"
+    generate_strings
+
+    echo "Finish 🍾"
+fi
+

@@ -1,0 +1,7 @@
+"Generator.Title" = "Gerador de Senha";
+"Generator.Length" = "Comprimento";
+"Generator.Numbers" = "Números";
+"Generator.Letters" = "Letras";
+"Generator.Symbols" = "Simbols";
+"Generator.Separator" = "Separador";
+"Generator.Error.InvalidOptions" = "Opções Invalids";

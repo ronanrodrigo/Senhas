@@ -12,7 +12,7 @@ struct CharInclusionView: View {
                     Image(systemName: "number.square.fill")
                         .font(.title)
                         .foregroundColor(.green)
-                    Text("Numbers")
+                    Text(L10n.Generator.numbers)
                 }
             }
             Toggle(isOn: $includeLetters) {
@@ -20,7 +20,7 @@ struct CharInclusionView: View {
                     Image(systemName: "a.square.fill")
                         .font(.title)
                         .foregroundColor(.orange)
-                    Text("Letters")
+                    Text(L10n.Generator.letters)
                 }
             }
             Toggle(isOn: $includeSymbols) {
@@ -28,7 +28,7 @@ struct CharInclusionView: View {
                     Image(systemName: "questionmark.square.fill")
                         .font(.title)
                         .foregroundColor(.purple)
-                    Text("Symbols")
+                    Text(L10n.Generator.symbols)
                 }
             }
         }

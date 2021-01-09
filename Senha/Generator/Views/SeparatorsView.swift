@@ -13,7 +13,7 @@ struct SeparatorsView: View {
                     Image(systemName: "divide.square.fill")
                         .font(.title)
                         .foregroundColor(.blue)
-                    Text("Separator")
+                    Text(L10n.Generator.separator)
                 }
             }
 
@@ -24,7 +24,7 @@ struct SeparatorsView: View {
                 self.separator = self.separators[$0]
             }
 
-            Picker("Separators", selection: selectionBinding) {
+            Picker(L10n.Generator.separator, selection: selectionBinding) {
                 ForEach(0 ..< separators.count) {
                     Text(self.separators[$0])
                 }
