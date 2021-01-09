@@ -31,7 +31,7 @@ struct GeneratorView<Controller: GeneratePasswordControllable, Presenter: Genera
         }
         .listStyle(GroupedListStyle())
         .environment(\.horizontalSizeClass, .regular)
-        .navigationBarTitle(Text("Password Generator"))
+        .navigationBarTitle(Text(L10n.Generator.title))
     }
 }
 

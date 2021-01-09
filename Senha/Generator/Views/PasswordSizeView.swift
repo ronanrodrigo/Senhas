@@ -15,7 +15,7 @@ struct PasswordSizeView: View {
                         .fontWeight(.bold)
                         .foregroundColor(.white)
                 }
-                Stepper("Length", value: $length, in: 5...50, step: 2)
+                Stepper(L10n.Generator.length, value: $length, in: 5...50, step: 2)
             }
         }
     }

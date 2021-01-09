@@ -22,7 +22,7 @@ final class GeneratePasswordPresenter: GeneratePasswordPresentable {
         let viewModel: PasswordViewModel
         switch error {
         case .invalidLength, .withoutInclusions:
-            viewModel = PasswordViewModel(errorMessage: "Invalid options")
+            viewModel = PasswordViewModel(errorMessage: L10n.Generator.Error.invalidOptions)
         }
         passwordViewModel = viewModel
     }
