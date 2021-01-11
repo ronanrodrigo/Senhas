@@ -3,12 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		3419CC6325A6FAC2008DD747 /* GeneratorError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3419CC6225A6FAC2008DD747 /* GeneratorError.swift */; };
 		3419CC6725A70724008DD747 /* Mocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3419CC6625A70724008DD747 /* Mocks.swift */; };
+		341C94BF25ACC81400FDA7F3 /* Senhas_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341C94BE25ACC81400FDA7F3 /* Senhas_UITests.swift */; };
+		341C94CA25ACC84600FDA7F3 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341C94C925ACC84600FDA7F3 /* SnapshotHelper.swift */; };
 		3475966C25A873C500A6D11E /* SenhaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3475966B25A873C500A6D11E /* SenhaApp.swift */; };
 		348A57A225A5E54200FC42B1 /* GeneratePasswordPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348A578525A5E54200FC42B1 /* GeneratePasswordPresenterTests.swift */; };
 		348A57AD25A5E54200FC42B1 /* CharacterGatewayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348A579225A5E54200FC42B1 /* CharacterGatewayTests.swift */; };
@@ -43,20 +45,31 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		341C94C125ACC81400FDA7F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 34E48029249D1D2A00FE8222 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 34E48030249D1D2A00FE8222;
+			remoteInfo = Senhas;
+		};
 		348A577C25A5E52300FC42B1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 34E48029249D1D2A00FE8222 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 34E48030249D1D2A00FE8222;
-			remoteInfo = Senha;
+			remoteInfo = Senhas;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		3419CC6225A6FAC2008DD747 /* GeneratorError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratorError.swift; sourceTree = "<group>"; };
 		3419CC6625A70724008DD747 /* Mocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mocks.swift; sourceTree = "<group>"; };
+		341C94BC25ACC81300FDA7F3 /* Senhas-UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Senhas-UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		341C94BE25ACC81400FDA7F3 /* Senhas_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Senhas_UITests.swift; sourceTree = "<group>"; };
+		341C94C025ACC81400FDA7F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		341C94C925ACC84600FDA7F3 /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapshotHelper.swift; path = fastlane/SnapshotHelper.swift; sourceTree = SOURCE_ROOT; };
 		3475966B25A873C500A6D11E /* SenhaApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SenhaApp.swift; sourceTree = "<group>"; };
-		348A577725A5E52200FC42B1 /* Senha-UnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Senha-UnitTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		348A577725A5E52200FC42B1 /* Senhas-UnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Senhas-UnitTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		348A577B25A5E52300FC42B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		348A578525A5E54200FC42B1 /* GeneratePasswordPresenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratePasswordPresenterTests.swift; sourceTree = "<group>"; };
 		348A579225A5E54200FC42B1 /* CharacterGatewayTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterGatewayTests.swift; sourceTree = "<group>"; };
@@ -82,11 +95,11 @@
 		34A3460025A42CE600251D6F /* PasswordGeneratedViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordGeneratedViewFactory.swift; sourceTree = "<group>"; };
 		34A3460425A48B9700251D6F /* CharacterGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterGateway.swift; sourceTree = "<group>"; };
 		34A3460825A48FE800251D6F /* CharacterGatewayableFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterGatewayableFactory.swift; sourceTree = "<group>"; };
-		34E48031249D1D2A00FE8222 /* Senha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Senha.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		34E48031249D1D2A00FE8222 /* Senhas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Senhas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34E4803A249D1D2D00FE8222 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		34E4803D249D1D2D00FE8222 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		34E48042249D1D2D00FE8222 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		34E4804A249D1F3900FE8222 /* Senha.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Senha.entitlements; sourceTree = "<group>"; };
+		34E4804A249D1F3900FE8222 /* Senhas.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Senhas.entitlements; sourceTree = "<group>"; };
 		34E48051249D8DA400FE8222 /* PasswordGeneratedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordGeneratedView.swift; sourceTree = "<group>"; };
 		34E48055249D8E9B00FE8222 /* GeneratorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratorView.swift; sourceTree = "<group>"; };
 		34E48056249D8E9B00FE8222 /* PasswordSizeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordSizeView.swift; sourceTree = "<group>"; };
@@ -95,6 +108,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		341C94B925ACC81300FDA7F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		348A577425A5E52200FC42B1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -112,14 +132,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		348A577825A5E52200FC42B1 /* Senha-UnitTests */ = {
+		341C94BD25ACC81400FDA7F3 /* Senhas-UITests */ = {
+			isa = PBXGroup;
+			children = (
+				341C94C925ACC84600FDA7F3 /* SnapshotHelper.swift */,
+				341C94BE25ACC81400FDA7F3 /* Senhas_UITests.swift */,
+				341C94C025ACC81400FDA7F3 /* Info.plist */,
+			);
+			path = "Senhas-UITests";
+			sourceTree = "<group>";
+		};
+		348A577825A5E52200FC42B1 /* Senhas-UnitTests */ = {
 			isa = PBXGroup;
 			children = (
 				348A57D925A5E64D00FC42B1 /* Base */,
 				348A578325A5E54200FC42B1 /* Generator */,
 				348A57E625A5F00500FC42B1 /* Support */,
 			);
-			path = "Senha-UnitTests";
+			path = "Senhas-UnitTests";
 			sourceTree = "<group>";
 		};
 		348A578325A5E54200FC42B1 /* Generator */ = {
@@ -252,8 +282,9 @@
 		34E48028249D1D2A00FE8222 = {
 			isa = PBXGroup;
 			children = (
-				34E48033249D1D2A00FE8222 /* Senha */,
-				348A577825A5E52200FC42B1 /* Senha-UnitTests */,
+				34E48033249D1D2A00FE8222 /* Senhas */,
+				348A577825A5E52200FC42B1 /* Senhas-UnitTests */,
+				341C94BD25ACC81400FDA7F3 /* Senhas-UITests */,
 				34E48032249D1D2A00FE8222 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -261,19 +292,20 @@
 		34E48032249D1D2A00FE8222 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				34E48031249D1D2A00FE8222 /* Senha.app */,
-				348A577725A5E52200FC42B1 /* Senha-UnitTests.xctest */,
+				34E48031249D1D2A00FE8222 /* Senhas.app */,
+				348A577725A5E52200FC42B1 /* Senhas-UnitTests.xctest */,
+				341C94BC25ACC81300FDA7F3 /* Senhas-UITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		34E48033249D1D2A00FE8222 /* Senha */ = {
+		34E48033249D1D2A00FE8222 /* Senhas */ = {
 			isa = PBXGroup;
 			children = (
 				34E48049249D1E2900FE8222 /* Base */,
 				34E4804B249D8CF900FE8222 /* Generator */,
 			);
-			path = Senha;
+			path = Senhas;
 			sourceTree = "<group>";
 		};
 		34E4803C249D1D2D00FE8222 /* Preview Content */ = {
@@ -290,7 +322,7 @@
 				34E4803A249D1D2D00FE8222 /* Assets.xcassets */,
 				34E48042249D1D2D00FE8222 /* Info.plist */,
 				34E4803C249D1D2D00FE8222 /* Preview Content */,
-				34E4804A249D1F3900FE8222 /* Senha.entitlements */,
+				34E4804A249D1F3900FE8222 /* Senhas.entitlements */,
 				3475966B25A873C500A6D11E /* SenhaApp.swift */,
 				348CB62425A94D21006C1EE2 /* Localizable.strings */,
 				348CB62A25A94F74006C1EE2 /* Strings.swift */,
@@ -327,9 +359,27 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		348A577625A5E52200FC42B1 /* Senha-UnitTests */ = {
+		341C94BB25ACC81300FDA7F3 /* Senhas-UITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 348A577E25A5E52300FC42B1 /* Build configuration list for PBXNativeTarget "Senha-UnitTests" */;
+			buildConfigurationList = 341C94C525ACC81400FDA7F3 /* Build configuration list for PBXNativeTarget "Senhas-UITests" */;
+			buildPhases = (
+				341C94B825ACC81300FDA7F3 /* Sources */,
+				341C94B925ACC81300FDA7F3 /* Frameworks */,
+				341C94BA25ACC81300FDA7F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				341C94C225ACC81400FDA7F3 /* PBXTargetDependency */,
+			);
+			name = "Senhas-UITests";
+			productName = "Senhas-UITests";
+			productReference = 341C94BC25ACC81300FDA7F3 /* Senhas-UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		348A577625A5E52200FC42B1 /* Senhas-UnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 348A577E25A5E52300FC42B1 /* Build configuration list for PBXNativeTarget "Senhas-UnitTests" */;
 			buildPhases = (
 				348A577325A5E52200FC42B1 /* Sources */,
 				348A577425A5E52200FC42B1 /* Frameworks */,
@@ -340,16 +390,16 @@
 			dependencies = (
 				348A577D25A5E52300FC42B1 /* PBXTargetDependency */,
 			);
-			name = "Senha-UnitTests";
+			name = "Senhas-UnitTests";
 			packageProductDependencies = (
 			);
-			productName = "Senha-UnitTests";
-			productReference = 348A577725A5E52200FC42B1 /* Senha-UnitTests.xctest */;
+			productName = "Senhas-UnitTests";
+			productReference = 348A577725A5E52200FC42B1 /* Senhas-UnitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		34E48030249D1D2A00FE8222 /* Senha */ = {
+		34E48030249D1D2A00FE8222 /* Senhas */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 34E48045249D1D2D00FE8222 /* Build configuration list for PBXNativeTarget "Senha" */;
+			buildConfigurationList = 34E48045249D1D2D00FE8222 /* Build configuration list for PBXNativeTarget "Senhas" */;
 			buildPhases = (
 				34E4802D249D1D2A00FE8222 /* Sources */,
 				34E4802E249D1D2A00FE8222 /* Frameworks */,
@@ -361,9 +411,9 @@
 			);
 			dependencies = (
 			);
-			name = Senha;
-			productName = Senha;
-			productReference = 34E48031249D1D2A00FE8222 /* Senha.app */;
+			name = Senhas;
+			productName = Senhas;
+			productReference = 34E48031249D1D2A00FE8222 /* Senhas.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -376,6 +426,10 @@
 				LastUpgradeCheck = 1230;
 				ORGANIZATIONNAME = "Ronan Nunes";
 				TargetAttributes = {
+					341C94BB25ACC81300FDA7F3 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 34E48030249D1D2A00FE8222;
+					};
 					348A577625A5E52200FC42B1 = {
 						CreatedOnToolsVersion = 12.3;
 						TestTargetID = 34E48030249D1D2A00FE8222;
@@ -385,8 +439,8 @@
 					};
 				};
 			};
-			buildConfigurationList = 34E4802C249D1D2A00FE8222 /* Build configuration list for PBXProject "Senha" */;
-			compatibilityVersion = "Xcode 9.3";
+			buildConfigurationList = 34E4802C249D1D2A00FE8222 /* Build configuration list for PBXProject "Senhas" */;
+			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -401,13 +455,21 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				34E48030249D1D2A00FE8222 /* Senha */,
-				348A577625A5E52200FC42B1 /* Senha-UnitTests */,
+				34E48030249D1D2A00FE8222 /* Senhas */,
+				348A577625A5E52200FC42B1 /* Senhas-UnitTests */,
+				341C94BB25ACC81300FDA7F3 /* Senhas-UITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		341C94BA25ACC81300FDA7F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		348A577525A5E52200FC42B1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -467,6 +529,15 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		341C94B825ACC81300FDA7F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				341C94BF25ACC81400FDA7F3 /* Senhas_UITests.swift in Sources */,
+				341C94CA25ACC84600FDA7F3 /* SnapshotHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		348A577325A5E52200FC42B1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -514,9 +585,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		341C94C225ACC81400FDA7F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 34E48030249D1D2A00FE8222 /* Senhas */;
+			targetProxy = 341C94C125ACC81400FDA7F3 /* PBXContainerItemProxy */;
+		};
 		348A577D25A5E52300FC42B1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 34E48030249D1D2A00FE8222 /* Senha */;
+			target = 34E48030249D1D2A00FE8222 /* Senhas */;
 			targetProxy = 348A577C25A5E52300FC42B1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -534,24 +610,64 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		348A577F25A5E52300FC42B1 /* Debug */ = {
+		341C94C325ACC81400FDA7F3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2729VXDM4D;
-				INFOPLIST_FILE = "Senha-UnitTests/Base/Info.plist";
+				INFOPLIST_FILE = "Senhas-UITests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "dev.ronanrodrigo.Senha-UnitTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.ronanrodrigo.Senhas-UITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Senha.app/Senha";
+				TEST_TARGET_NAME = Senhas;
+			};
+			name = Debug;
+		};
+		341C94C425ACC81400FDA7F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2729VXDM4D;
+				INFOPLIST_FILE = "Senhas-UITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.ronanrodrigo.Senhas-UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Senhas;
+			};
+			name = Release;
+		};
+		348A577F25A5E52300FC42B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2729VXDM4D;
+				INFOPLIST_FILE = "Senhas-UnitTests/Base/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.ronanrodrigo.Senhas-UnitTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Senhas.app/Senhas";
 			};
 			name = Debug;
 		};
@@ -561,18 +677,18 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2729VXDM4D;
-				INFOPLIST_FILE = "Senha-UnitTests/Base/Info.plist";
+				INFOPLIST_FILE = "Senhas-UnitTests/Base/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "dev.ronanrodrigo.Senha-UnitTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.ronanrodrigo.Senhas-UnitTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Senha.app/Senha";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Senhas.app/Senhas";
 			};
 			name = Release;
 		};
@@ -696,22 +812,24 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = Senha/Base/Senha.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Senhas/Base/Senhas.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"Senha/Base/Preview Content\"";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_ASSET_PATHS = "\"Senhas/Base/Preview Content\"";
 				DEVELOPMENT_TEAM = 2729VXDM4D;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Senha/Base/Info.plist;
+				INFOPLIST_FILE = Senhas/Base/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = app.ronanrodrigo.Senha;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.ronanrodrigo.Senhas;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTS_MACCATALYST = YES;
+				PROVISIONING_PROFILE_SPECIFIER = "match AppStore dev.ronanrodrigo.Senhas";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -721,22 +839,24 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = Senha/Base/Senha.entitlements;
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"Senha/Base/Preview Content\"";
+				CODE_SIGN_ENTITLEMENTS = Senhas/Base/Senhas.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_ASSET_PATHS = "\"Senhas/Base/Preview Content\"";
 				DEVELOPMENT_TEAM = 2729VXDM4D;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Senha/Base/Info.plist;
+				INFOPLIST_FILE = Senhas/Base/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = app.ronanrodrigo.Senha;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.ronanrodrigo.Senhas;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTS_MACCATALYST = YES;
+				PROVISIONING_PROFILE_SPECIFIER = "match AppStore dev.ronanrodrigo.Senhas";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -745,7 +865,16 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		348A577E25A5E52300FC42B1 /* Build configuration list for PBXNativeTarget "Senha-UnitTests" */ = {
+		341C94C525ACC81400FDA7F3 /* Build configuration list for PBXNativeTarget "Senhas-UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				341C94C325ACC81400FDA7F3 /* Debug */,
+				341C94C425ACC81400FDA7F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		348A577E25A5E52300FC42B1 /* Build configuration list for PBXNativeTarget "Senhas-UnitTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				348A577F25A5E52300FC42B1 /* Debug */,
@@ -754,7 +883,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		34E4802C249D1D2A00FE8222 /* Build configuration list for PBXProject "Senha" */ = {
+		34E4802C249D1D2A00FE8222 /* Build configuration list for PBXProject "Senhas" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				34E48043249D1D2D00FE8222 /* Debug */,
@@ -763,7 +892,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		34E48045249D1D2D00FE8222 /* Build configuration list for PBXNativeTarget "Senha" */ = {
+		34E48045249D1D2D00FE8222 /* Build configuration list for PBXNativeTarget "Senhas" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				34E48046249D1D2D00FE8222 /* Debug */,

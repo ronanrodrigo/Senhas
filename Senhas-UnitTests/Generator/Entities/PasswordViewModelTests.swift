@@ -1,4 +1,4 @@
-@testable import Senha
+@testable import Senhas
 import XCTest
 
 final class PasswordViewModelTests: XCTestCase {

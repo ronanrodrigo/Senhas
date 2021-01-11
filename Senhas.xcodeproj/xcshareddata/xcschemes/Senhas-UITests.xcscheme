@@ -9,15 +9,15 @@
          <BuildActionEntry
             buildForTesting = "YES"
             buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "34E48030249D1D2A00FE8222"
-               BuildableName = "Senha.app"
-               BlueprintName = "Senha"
-               ReferencedContainer = "container:Senha.xcodeproj">
+               BlueprintIdentifier = "341C94BB25ACC81300FDA7F3"
+               BuildableName = "Senhas-UITests.xctest"
+               BlueprintName = "Senhas-UITests"
+               ReferencedContainer = "container:Senhas.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -26,17 +26,16 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES"
-      codeCoverageEnabled = "YES">
+      shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
          <TestableReference
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "348A577625A5E52200FC42B1"
-               BuildableName = "Senha-UnitTests.xctest"
-               BlueprintName = "Senha-UnitTests"
-               ReferencedContainer = "container:Senha.xcodeproj">
+               BlueprintIdentifier = "341C94BB25ACC81300FDA7F3"
+               BuildableName = "Senhas-UITests.xctest"
+               BlueprintName = "Senhas-UITests"
+               ReferencedContainer = "container:Senhas.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -45,23 +44,12 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = "pt-BR"
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "34E48030249D1D2A00FE8222"
-            BuildableName = "Senha.app"
-            BlueprintName = "Senha"
-            ReferencedContainer = "container:Senha.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -69,16 +57,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "34E48030249D1D2A00FE8222"
-            BuildableName = "Senha.app"
-            BlueprintName = "Senha"
-            ReferencedContainer = "container:Senha.xcodeproj">
+            BlueprintIdentifier = "341C94BB25ACC81300FDA7F3"
+            BuildableName = "Senhas-UITests.xctest"
+            BlueprintName = "Senhas-UITests"
+            ReferencedContainer = "container:Senhas.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

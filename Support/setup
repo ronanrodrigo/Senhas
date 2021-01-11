@@ -6,6 +6,7 @@ setup_enviroment() {
     validate_xcode_version
     install_system_basics
     install_brew_dependencies
+    install_gems
     open_project
 }
 
@@ -38,6 +39,10 @@ install_brew_dependencies() {
             brew install $brew_dependency
         fi
     done
+}
+
+install_gems() {
+    bundle install
 }
 
 open_project() {

@@ -1,0 +1,11 @@
+app_bundle_identifier = "dev.ronanrodrigo.Senhas"
+app_identifier(app_bundle_identifier)
+
+apple_id_email = "ronan.nunes@me.com"
+apple_id(apple_id_email)
+
+app_store_connect_team_id = "117774354"
+itc_team_id(app_store_connect_team_id)
+
+developer_portal_team_id = "2729VXDM4D"
+team_id(developer_portal_team_id)

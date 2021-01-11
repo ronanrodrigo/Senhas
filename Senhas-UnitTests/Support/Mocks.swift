@@ -6,7 +6,7 @@
 
 import Combine
 import Foundation
-@testable import Senha
+@testable import Senhas
 
 
 class GeneratePasswordMutablePresentableMock: GeneratePasswordMutablePresentable {

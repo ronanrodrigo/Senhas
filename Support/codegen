@@ -5,13 +5,13 @@ senha_path="$( cd "$(dirname "$0")"; cd .. ; pwd -P )"
 support_path="$(cd "$(dirname "$0")" && pwd)"
 
 generate_mocks() {
-    mock_sources_path="$senha_path/Senha"
-    mock_output_path="$senha_path/Senha-UnitTests/Support"
+    mock_sources_path="$senha_path/Senhas"
+    mock_output_path="$senha_path/Senhas-UnitTests/Support"
     if [ "$(ls $mock_output_path)" ]; then
         chmod 755 $mock_output_path/*
     fi
 
-    $support_path/mockolo -s $mock_sources_path -d "$mock_output_path/Mocks.swift" -i "Senha" --enable-args-history
+    $support_path/mockolo -s $mock_sources_path -d "$mock_output_path/Mocks.swift" -i "Senhas" --enable-args-history
 
     if [ "$(ls $mock_output_path)" ]; then
         chmod 444 $mock_output_path/*
@@ -19,8 +19,8 @@ generate_mocks() {
 }
 
 generate_strings() {
-    strings_output_path="$senha_path/Senha/Base/Strings.swift"
-    localizable_strings_path="$senha_path/Senha/Base/en.lproj/Localizable.strings"
+    strings_output_path="$senha_path/Senhas/Base/Strings.swift"
+    localizable_strings_path="$senha_path/Senhas/Base/en.lproj/Localizable.strings"
     chmod 755 $strings_output_path
     swiftgen run strings $localizable_strings_path --templateName structured-swift5 --output $strings_output_path
     chmod 444 $strings_output_path
