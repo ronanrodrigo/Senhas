@@ -60,7 +60,7 @@ final class GeneratePasswordInteractor: GeneratePasswordInteractable {
         return mutableCharactersList.shuffled()
     }
 
-    private func addSeparators(_ passwordArray: [String], _ passwordOptions: PasswordOptions) -> String{
+    private func addSeparators(_ passwordArray: [String], _ passwordOptions: PasswordOptions) -> String {
         var separatedPassword = ""
         passwordArray.forEach {
             separatedPassword += $0

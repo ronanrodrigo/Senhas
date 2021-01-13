@@ -20,6 +20,20 @@
                ReferencedContainer = "container:Senhas.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "NO"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "341C94BB25ACC81300FDA7F3"
+               BuildableName = "Senhas-UITests.xctest"
+               BlueprintName = "Senhas-UITests"
+               ReferencedContainer = "container:Senhas.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -36,16 +50,6 @@
                BlueprintIdentifier = "348A577625A5E52200FC42B1"
                BuildableName = "Senhas-UnitTests.xctest"
                BlueprintName = "Senhas-UnitTests"
-               ReferencedContainer = "container:Senhas.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "341C94BB25ACC81300FDA7F3"
-               BuildableName = "Senhas-UITests.xctest"
-               BlueprintName = "Senhas-UITests"
                ReferencedContainer = "container:Senhas.xcodeproj">
             </BuildableReference>
          </TestableReference>

@@ -1,0 +1,7 @@
+*generated.swift
+**/fastlane/
+fastlane
+fastlane/**/
+**/Support/
+**/*Mock.swift
+**/*Mocks.swift

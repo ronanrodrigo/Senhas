@@ -42,7 +42,14 @@ install_brew_dependencies() {
 }
 
 install_gems() {
-    bundle install
+    if ! type "bundler" &> /dev/null; then
+        gem install bundler
+    fi
+    
+    bundle check &> /dev/null
+    if [ ! $? -eq 0 ]; then
+        bundle install --quiet
+    fi
 }
 
 open_project() {

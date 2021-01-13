@@ -1,6 +1,4 @@
-final class CharacterGatewayableFactory {
-    private init() { }
-
+enum CharacterGatewayableFactory {
     static func make() -> CharacterGatewayable {
         CharacterGateway()
     }

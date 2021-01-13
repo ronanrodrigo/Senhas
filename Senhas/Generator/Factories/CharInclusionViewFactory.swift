@@ -1,8 +1,6 @@
 import SwiftUI
 
-final class CharInclusionViewFactory {
-    private init() { }
-
+enum CharInclusionViewFactory {
     static func make(_ includeNumbers: Binding<Bool>,
                      _ includeLetters: Binding<Bool>,
                      _ includeSymbols: Binding<Bool>) -> some View {

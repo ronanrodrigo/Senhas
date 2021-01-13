@@ -1,0 +1,8 @@
+ignore:
+    - "**/*Tests"
+    - "**/*Tests/*"
+    - "*generated.swift"
+    - "**/fastlane/*"
+    - "fastlane"
+    - "fastlane/**/*"
+    - "**/Support/*"

@@ -1,6 +1,4 @@
-final class GeneratePasswordPresentableFactory {
-    private init() { }
-
+enum GeneratePasswordPresentableFactory {
     static func make() -> some GeneratePasswordPresentable {
         GeneratePasswordPresenter()
     }

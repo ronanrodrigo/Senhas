@@ -1,8 +1,6 @@
 import SwiftUI
 
-final class GeneratorViewFactory {
-    private init() { }
-
+enum GeneratorViewFactory {
     static func make() -> some View {
         let presenter = GeneratePasswordPresentableFactory.make()
         let interactor = GeneratePasswordInteractableFactory.make(presenter)
