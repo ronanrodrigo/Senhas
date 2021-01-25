@@ -5,14 +5,13 @@ platform :ios do
   lane :beta do
     sync_code_signing(type: "appstore")
     capture_screenshots
-    build_app(
-      scheme: "Senhas",
-      include_bitcode: true,
-      project: "Senhas.xcodeproj"
-      )
     increment_build_number(
       build_number: latest_testflight_build_number + 1,
       xcodeproj: "Senhas.xcodeproj")
+    build_app(
+      scheme: "Senhas",
+      include_bitcode: true,
+      project: "Senhas.xcodeproj")
     upload_to_testflight
   end
 end

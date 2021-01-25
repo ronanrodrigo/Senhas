@@ -17,6 +17,7 @@ struct PasswordSizeView: View {
                 }
                 Stepper(L10n.Generator.length, value: $length, in: 5...50, step: 2)
             }
+            .padding(.vertical)
         }
     }
 }
