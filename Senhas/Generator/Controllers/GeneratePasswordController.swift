@@ -13,7 +13,7 @@ protocol GeneratePasswordControllable: ObservableObject {
 final class GeneratePasswordController: GeneratePasswordControllable {
     private let interactor: GeneratePasswordInteractable
     private var cancellable: Cancellable?
-    @Published var length: Int = 25
+    @Published var length: Int = 15
     @Published var includeNumbers: Bool = true
     @Published var includeLetters: Bool = true
     @Published var includeSymbols: Bool = false
