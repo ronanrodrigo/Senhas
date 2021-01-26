@@ -35,8 +35,19 @@ struct GeneratorView<Controller: GeneratePasswordControllable, Presenter: Genera
     }
 }
 
-struct GeneratorView_Previews: PreviewProvider {
+class GeneratorView_Previews: PreviewProvider, GeneratePasswordControllable, GeneratePasswordPresentable {
+    var passwordViewModel: PasswordViewModel = .init(password: "123-aBc-789")
+    var length: Int = 0
+    var includeNumbers: Bool = true
+    var includeLetters: Bool = true
+    var includeSymbols: Bool = false
+    var includeSeparators: Bool = true
+    var separator: String = "-"
+    func update(password: Password) {}
+    func handle(error: GeneratorError) {}
+
     static var previews: some View {
-        GeneratorViewFactory.make()
+        let preview = GeneratorView_Previews()
+        return GeneratorView(controller: preview, presenter: preview)
     }
 }
