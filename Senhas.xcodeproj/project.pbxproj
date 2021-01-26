@@ -11,6 +11,12 @@
 		3419CC6725A70724008DD747 /* Mocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3419CC6625A70724008DD747 /* Mocks.swift */; };
 		341C94BF25ACC81400FDA7F3 /* Senhas_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341C94BE25ACC81400FDA7F3 /* Senhas_UITests.swift */; };
 		341C94CA25ACC84600FDA7F3 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341C94C925ACC84600FDA7F3 /* SnapshotHelper.swift */; };
+		343D498F25C0267300F17827 /* GeneratorViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343D497E25C0250900F17827 /* GeneratorViewTests.swift */; };
+		343D499425C029DF00F17827 /* CharInclusionViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343D499325C029DF00F17827 /* CharInclusionViewTests.swift */; };
+		343D499925C02B0800F17827 /* PasswordGeneratedViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343D499825C02B0800F17827 /* PasswordGeneratedViewTests.swift */; };
+		343D499E25C02B6100F17827 /* PasswordSizeViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343D499D25C02B6100F17827 /* PasswordSizeViewTests.swift */; };
+		343D49A325C02B7E00F17827 /* SeparatorsViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343D49A225C02B7E00F17827 /* SeparatorsViewTests.swift */; };
+		343D49A925C02E5D00F17827 /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = 343D49A825C02E5D00F17827 /* SnapshotTesting */; };
 		3475966C25A873C500A6D11E /* SenhaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3475966B25A873C500A6D11E /* SenhaApp.swift */; };
 		348A57A225A5E54200FC42B1 /* GeneratePasswordPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348A578525A5E54200FC42B1 /* GeneratePasswordPresenterTests.swift */; };
 		348A57AD25A5E54200FC42B1 /* CharacterGatewayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348A579225A5E54200FC42B1 /* CharacterGatewayTests.swift */; };
@@ -68,6 +74,11 @@
 		341C94BE25ACC81400FDA7F3 /* Senhas_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Senhas_UITests.swift; sourceTree = "<group>"; };
 		341C94C025ACC81400FDA7F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		341C94C925ACC84600FDA7F3 /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapshotHelper.swift; path = fastlane/SnapshotHelper.swift; sourceTree = SOURCE_ROOT; };
+		343D497E25C0250900F17827 /* GeneratorViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratorViewTests.swift; sourceTree = "<group>"; };
+		343D499325C029DF00F17827 /* CharInclusionViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharInclusionViewTests.swift; sourceTree = "<group>"; };
+		343D499825C02B0800F17827 /* PasswordGeneratedViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordGeneratedViewTests.swift; sourceTree = "<group>"; };
+		343D499D25C02B6100F17827 /* PasswordSizeViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordSizeViewTests.swift; sourceTree = "<group>"; };
+		343D49A225C02B7E00F17827 /* SeparatorsViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeparatorsViewTests.swift; sourceTree = "<group>"; };
 		3475966B25A873C500A6D11E /* SenhaApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SenhaApp.swift; sourceTree = "<group>"; };
 		348A577725A5E52200FC42B1 /* Senhas-UnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Senhas-UnitTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		348A577B25A5E52300FC42B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -119,6 +130,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				343D49A925C02E5D00F17827 /* SnapshotTesting in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,9 +154,22 @@
 			path = "Senhas-UITests";
 			sourceTree = "<group>";
 		};
+		343D497D25C024F800F17827 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				343D497E25C0250900F17827 /* GeneratorViewTests.swift */,
+				343D499325C029DF00F17827 /* CharInclusionViewTests.swift */,
+				343D499825C02B0800F17827 /* PasswordGeneratedViewTests.swift */,
+				343D499D25C02B6100F17827 /* PasswordSizeViewTests.swift */,
+				343D49A225C02B7E00F17827 /* SeparatorsViewTests.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		348A577825A5E52200FC42B1 /* Senhas-UnitTests */ = {
 			isa = PBXGroup;
 			children = (
+				343D497D25C024F800F17827 /* Views */,
 				348A57D925A5E64D00FC42B1 /* Base */,
 				348A578325A5E54200FC42B1 /* Generator */,
 				348A57E625A5F00500FC42B1 /* Support */,
@@ -373,6 +398,8 @@
 				341C94C225ACC81400FDA7F3 /* PBXTargetDependency */,
 			);
 			name = "Senhas-UITests";
+			packageProductDependencies = (
+			);
 			productName = "Senhas-UITests";
 			productReference = 341C94BC25ACC81300FDA7F3 /* Senhas-UITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -392,6 +419,7 @@
 			);
 			name = "Senhas-UnitTests";
 			packageProductDependencies = (
+				343D49A825C02E5D00F17827 /* SnapshotTesting */,
 			);
 			productName = "Senhas-UnitTests";
 			productReference = 348A577725A5E52200FC42B1 /* Senhas-UnitTests.xctest */;
@@ -450,6 +478,7 @@
 			);
 			mainGroup = 34E48028249D1D2A00FE8222;
 			packageReferences = (
+				343D49A725C02E5D00F17827 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */,
 			);
 			productRefGroup = 34E48032249D1D2A00FE8222 /* Products */;
 			projectDirPath = "";
@@ -543,11 +572,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				348A57B825A5E54200FC42B1 /* PasswordViewModelTests.swift in Sources */,
+				343D499925C02B0800F17827 /* PasswordGeneratedViewTests.swift in Sources */,
+				343D499E25C02B6100F17827 /* PasswordSizeViewTests.swift in Sources */,
 				348A57A225A5E54200FC42B1 /* GeneratePasswordPresenterTests.swift in Sources */,
+				343D498F25C0267300F17827 /* GeneratorViewTests.swift in Sources */,
 				348A57AD25A5E54200FC42B1 /* CharacterGatewayTests.swift in Sources */,
 				348A57AF25A5E54200FC42B1 /* GeneratePasswordControllerTests.swift in Sources */,
 				3419CC6725A70724008DD747 /* Mocks.swift in Sources */,
 				348A57AE25A5E54200FC42B1 /* GeneratePasswordInteractorTests.swift in Sources */,
+				343D499425C029DF00F17827 /* CharInclusionViewTests.swift in Sources */,
+				343D49A325C02B7E00F17827 /* SeparatorsViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -902,6 +936,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		343D49A725C02E5D00F17827 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-snapshot-testing.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.8.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		343D49A825C02E5D00F17827 /* SnapshotTesting */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 343D49A725C02E5D00F17827 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;
+			productName = SnapshotTesting;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 34E48029249D1D2A00FE8222 /* Project object */;
 }
