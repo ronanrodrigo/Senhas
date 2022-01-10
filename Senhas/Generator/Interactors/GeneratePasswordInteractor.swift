@@ -19,10 +19,10 @@ final class GeneratePasswordInteractor: GeneratePasswordInteractable {
         guard passwordOptions.length > 2 else {
             return presenter.handle(error: .invalidLength)
         }
-        let containsInclusion = passwordOptions.include.letters ||
+        let containsSomeInclusion = passwordOptions.include.letters ||
             passwordOptions.include.numbers ||
             passwordOptions.include.symbols
-        guard containsInclusion else {
+        guard containsSomeInclusion else {
             return presenter.handle(error: .withoutInclusions)
         }
 
