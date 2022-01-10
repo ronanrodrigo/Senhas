@@ -37,7 +37,8 @@ final class GeneratePasswordInteractor: GeneratePasswordInteractable {
         }
 
         let generatedPassword: String
-        if passwordOptions.include.separators {
+        let includeSeparatorOptions = passwordOptions.include.separators
+        if includeSeparatorOptions {
             generatedPassword = addSeparators(passwordArray, passwordOptions)
         } else {
             generatedPassword = passwordArray.joined()
